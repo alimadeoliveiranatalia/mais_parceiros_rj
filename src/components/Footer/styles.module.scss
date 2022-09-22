@@ -1,0 +1,20 @@
+﻿.footerConteiner {
+    height: 8rem;
+    border-top: 1px solid var(--gray-300);
+    background-color: var(--blue);
+}
+.footerContent {
+    max-width: 1120px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    a {
+        color: var(--white);
+        transition: color 0.2s;
+        
+        &:hover {
+            color: var(--gray-300);
+        }
+    }
+}
