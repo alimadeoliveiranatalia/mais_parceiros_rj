@@ -1,6 +1,4 @@
-import Head from 'next/head'
-import Image from 'next/image'
-import logo from '../public/images/senai_logo.png';
+import Head from 'next/head';
 import { Footer } from '../src/components/Footer';
 import styles from '../styles/Home.module.scss';
 
@@ -12,7 +10,6 @@ export default function Home() {
       </Head>
       <main className={styles.contentContainer}>
         <section className={styles.hero}>
-          <Image src={logo} />
           <h1 className={styles.title}>Mais Parceiros</h1>
           <p>O programa <strong>Mais Parceiros</strong> foi criado com o intuito de estabelecer um canal direto de comunicação entre o <strong>SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem como demostrar os benefícios em ser um parceiro deste programa.</p>
           <br/>
