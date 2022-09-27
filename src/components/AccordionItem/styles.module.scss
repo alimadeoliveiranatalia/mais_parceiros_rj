@@ -1,0 +1,35 @@
+﻿.accordionItem {
+    
+    button {
+        margin: 2rem 2rem 0.12rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        color: var(--blue);
+        font-size: 1.25rem;
+        font-weight: 900;
+        cursor: pointer;
+        transition: color 0.2s;
+        &:hover{
+           color: var(--gray-300);
+
+        }
+        
+    }
+
+    div {
+        width: auto;
+        height: auto;
+        
+        p {
+            font-size: 1.13rem;
+            margin: 0rem 1rem 0rem 3rem;
+            padding: 1.12rem 0rem 1.12rem 0rem;
+            color: var(--gray-300);
+            transform: rotate(720deg);
+        }
+    }
+    
+    
+
+}
