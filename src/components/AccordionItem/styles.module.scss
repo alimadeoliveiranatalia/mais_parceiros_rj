@@ -1,6 +1,6 @@
 ﻿.accordionItem {
-    
-    button {
+        
+    summary {
         margin: 2rem 2rem 0.12rem 2rem;
         display: flex;
         justify-content: space-between;
@@ -12,14 +12,15 @@
         transition: color 0.2s;
         &:hover{
            color: var(--gray-300);
-
-        }
         
+        }
     }
 
     div {
         width: auto;
         height: auto;
+
+        
         
         p {
             font-size: 1.13rem;
