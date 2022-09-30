@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  background: gray;
 }
 .hero {
   //max-width: 1110px;
@@ -17,6 +18,7 @@
   p {
     font-size: 1rem;
     line-height: 2.25rem;
+    padding: auto;
     margin-top: 1.5rem;
   }
 }
@@ -25,4 +27,5 @@
   font-size: 2.2rem;
   padding-bottom: 10px;
   margin-bottom: 8px;
+  background: ghostwhite;
 }
