@@ -1,4 +1,4 @@
-﻿import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
+﻿import { useEffect, useState } from 'react';
 import styles from './styles.module.scss';
 
 const slideVideos = [
@@ -8,9 +8,22 @@ const slideVideos = [
 ];
 
 export function LinkYoutube() {
+    const [ video, setVideo ] = useState([]);
+
+    useEffect(() => {
+        fetch('./parceiros.json', {
+            headers: {
+                Accept: 'application/json'
+            }
+        }).then(res => res.json())
+        .then(res => console.log(res.parceiros.area_atuacao))
+        //.then(res => setVideo(res.parceiros.area_atuacao))
+        
+    }, []);
     return (
-        <>
+        <>  <p>{video}</p>
             <div>
+                
                 <iframe 
                     className={styles.video}
                     src="https://www.youtube.com/embed/wDflrSMTf_Q"
