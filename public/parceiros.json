@@ -1,66 +1,86 @@
-﻿{
-    "parceiros": {
-        "area_atuacao": {
+﻿{    
+    "area_atuacao": [
+        {
             "agronegocio": [
                 {
                     "empresa":"John Deere do Brasil",
                     "escola_responsavel":"602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes"
                 }
-            ],
+            ]
+        },
+        {
             "alimentos_bebidas": [
                 {
                     "empresa":"Finamac Engenharia e Industrialização de Equipamentos",
                     "escola_responsavel":"105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira"
                 }
-            ],
+            ]
+        },
+        {
             "associacoes_entidades": [
                 {
                     "empresa":"Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL",
                     "escola_responsavel":"124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho"
                 }
-            ],
+            ]
+        },
+        {
             "automacao_industrial": [
                 {
                     "empresa":"Altus Sistemas de Automação S.A. Comau do Brasil",
                     "escola_responsavel":"568 - Escola Senai - Campo Limpo Paulista - Alfried Krupp"
                 }
-            ],
+            ]
+        },
+       {
             "automotiva": [
                 {
                     "empresa":"APTIV Manufatura e Serv. de Distribuição LTDA (DELPHI)",
                     "escola_responsavel":"510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
                 }
-            ],
+            ]
+       },
+        {
             "ceramica": [
                 {
                     "empresa":"Associação das Cerâmicas Vermelhas de Itú e Região",
                     "escola_responsavel":"116 - Escola Senai - São Bernado do Campo (Mário Amato) - Mario Amato"
                 }
-            ],
+            ]
+        },
+        {
             "construcao_civil": [
                 {
                     "empresa":"Amanco Brasil LTDA",
                     "escola_responsavel":"111 - Escola Senai - Tatuapé - Orlando Laviero Ferraiuolo"
                 }
-            ],
+            ]
+        },
+        {
             "eletronica": [
                 {
                     "empresa":"Wago Eletronica LTDA",
                     "escola_responsavel":"510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
                 }
-            ],
+            ]
+        },
+        {
             "energia_eletricidade": [
                 {
                     "empresa":"Antares Soluções Energéticas Renováveis LTDA",
                     "escola_responsavel":"562 - Escola Senai - Indaiatuba - Comendador Santoro Mirone"
                 }
-            ],
+            ]
+        },
+        {
             "equipamentos_biomedicos": [
                 {
                     "empresa":"Biosensor Indústria e Comércio LTDA",
                     "escola_responsavel":"106 - Escola Senai - Vila Leopoldina - Mariano Ferraz"
                 }
-            ],
+            ]
+        },
+        {
             "gestao": [
                 {
                     "empresa":"ERFLEX software LTDA",
@@ -68,5 +88,5 @@
                 }
             ]
         }
-    }
+    ]
 }

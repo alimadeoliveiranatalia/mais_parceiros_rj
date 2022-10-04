@@ -1,27 +1,9 @@
-﻿import { useEffect, useState } from 'react';
-import styles from './styles.module.scss';
-
-const slideVideos = [
-    'https://www.youtube.com/embed/wDflrSMTf_Q',
-    'https://youtu.be/mzQZMOPcasQ',
-    'https://youtu.be/3DbnSUSTYXw'
-];
+﻿import styles from './styles.module.scss';
 
 export function LinkYoutube() {
-    const [ video, setVideo ] = useState([]);
-
-    useEffect(() => {
-        fetch('./parceiros.json', {
-            headers: {
-                Accept: 'application/json'
-            }
-        }).then(res => res.json())
-        .then(res => console.log(res.parceiros.area_atuacao))
-        //.then(res => setVideo(res.parceiros.area_atuacao))
-        
-    }, []);
+    
     return (
-        <>  <p>{video}</p>
+        <>  
             <div>
                 
                 <iframe 
