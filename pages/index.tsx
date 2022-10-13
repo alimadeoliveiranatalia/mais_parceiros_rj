@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Accordion } from '../src/components/Accordion';
 import { Footer } from '../src/components/Footer';
 import { LinkYoutube } from '../src/components/LinkYoutube';
+import { SliderShow } from '../src/components/Slidershow';
 import styles from '../styles/Home.module.scss';
 
 const questionsAnswers = [
@@ -57,6 +58,7 @@ export default function Home() {
       <section className={styles.hero}>
         <h1 className={styles.title}>Depoimentos de quem já fez parte</h1>
           <LinkYoutube />
+          <SliderShow />
       </section>
       </div>
       <section className={styles.contentContainer}>
