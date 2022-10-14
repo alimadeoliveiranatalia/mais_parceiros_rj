@@ -1,59 +1,48 @@
-﻿import Image from 'next/image';
+﻿import { motion } from 'framer-motion';
+import Image from 'next/image';
 import contract from '../../../public/images/contract.jpg';
 import parceria from '../../../public/images/parceria.jpg';
 import workshop from '../../../public/images/workshop.jpg';
 import styles from './styles.module.scss';
 import { useEffect, useRef, useState } from "react";
 
-const colors = [ '#0088FE', '00C49F', '#FFBB28' ];
-const delay = 2500;
+const images = [ contract, parceria, workshop ];
+
+
 
 export function SliderShow(){
-    const [ index, setIndex ] = useState(0);
-    const timeoutRef = useRef(null);
+    const carousel = useRef();
+    const [ widthSlider, setWidthSlider ] = useState(0);
 
-    function resetTimeout(){
-        if(timeoutRef.current){
-            clearTimeout(timeoutRef.current);
-        }
-    }
     useEffect(() => {
-        resetTimeout();
-        timeoutRef.current = setTimeout(() => 
-            setIndex((prevIndex) => 
-                prevIndex === colors.length - 1 ? 0 : prevIndex + 1
-            ),
-            delay
-        );
-        return resetTimeout();
-        
-    }, [index]);
+        //console.log(carousel.current?.scrollWidth, carousel.current?.offsetWidth);
+        setWidthSlider(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    },[]);
 
     return(
-        <div className={styles.slideshow}>
-            <div
-                className={styles.slideshowSlider}
-                style={{ transform: `translate3d(${-index*100}%, 0, 0)`}}
+        <div className={styles.slider}>
+            <motion.div
+                ref={ carousel }
+                className={styles.carousel}
+                whileTap={{ cursor: 'grabbing'}}
             >
-                {colors.map((backgroundColor, index) => (
-                    <div
-                        className={styles.slide}
-                        key={index}
-                        style={{ backgroundColor }}
-                    ></div>
-                ))}
-            </div>
-            <div className={styles.slideshowDots}>
-                {colors.map((_, idx) => (
-                    <div
-                        key={idx}
-                        className={`slideshowDot${ index === idx ? 'active': ''}`}
-                        onClick={() => { setIndex(idx); }}
-                    >
-                    </div>
-                ))}
-            </div>
-           
+                <motion.div
+                    className={styles.inner}
+                    drag='x'
+                    dragConstraints={{ right: 0, left: -widthSlider }}
+                    initial={{ x:100 }}
+                    animate={{ x:0 }}
+                    transition={{ duration: 0.18 }}
+                >
+                    {images.map(image => (
+                        <motion.div 
+                            className={styles.item}    
+                        >
+                            <Image src={image} priority/>
+                        </motion.div>
+                    ))}
+                </motion.div>
+            </motion.div>
         </div>
     )
 }
