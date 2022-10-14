@@ -1,12 +1,6 @@
 ﻿import { motion } from 'framer-motion';
-import Image from 'next/image';
-import contract from '../../../public/images/contract.jpg';
-import parceria from '../../../public/images/parceria.jpg';
-import workshop from '../../../public/images/workshop.jpg';
 import styles from './styles.module.scss';
 import { useEffect, useRef, useState } from "react";
-
-const images = [ contract, parceria, workshop ];
 
 const questionsAnswers = [
     {
@@ -31,7 +25,7 @@ const questionsAnswers = [
     },
     {
       question: 'Difusão Tecnológica',
-      answer: 'Os esforços conjuntos do <strong>SENAI</strong> e de seus parceiros, visam a mordenização de processos, mediante ao uso de produtos e serviços difundidos no mercado.'
+      answer: 'Os esforços conjuntos do SENAI e de seus parceiros, visam a mordenização de processos, mediante ao uso de produtos e serviços difundidos no mercado.'
     },
     {
       question: 'Capilaridade da Rede Senai',
@@ -65,12 +59,12 @@ export function SliderShow(){
                     animate={{ x:0 }}
                     transition={{ duration: 0.8 }}
                 >
-                    {images.map(image => (
+                    {questionsAnswers.map(item => (
                         <motion.div
-                            //key={image}
+                            
                             className={styles.item}    
                         >
-                            <Image src={image} priority/>
+                            <div><span>{item.question}</span>{item.answer}</div>
                         </motion.div>
                     ))}
                 </motion.div>
