@@ -48,9 +48,10 @@ export default function Home() {
           <br />
           <h1 className={styles.title}>Mais Parceiros</h1>
           <p>O programa <strong>Mais Parceiros</strong> foi criado com o intuito de estabelecer um canal direto de comunicação entre o 
-           <strong>SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 
+          <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 
           como demostrar os benefícios em ser um parceiro deste programa.</p>
           <p>O programa estabelece os seguintes benefícios:</p>
+          <SliderShow />
           <Accordion questionsAnswers={questionsAnswers} />
         </section>
       </div>
@@ -58,7 +59,6 @@ export default function Home() {
       <section className={styles.hero}>
         <h1 className={styles.title}>Depoimentos de quem já fez parte</h1>
           <LinkYoutube />
-          <SliderShow />
       </section>
       </div>
       <section className={styles.contentContainer}>
