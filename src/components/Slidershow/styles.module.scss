@@ -22,12 +22,15 @@
     padding: 0.875rem;
     
     div {
-        width: 100%;
+        width: 20rem;
         height: 90%;
         border-radius: 0.75rem;
         pointer-events: none;
-        background-color: gainsboro;
-        //padding: 2rem;
+        background-color: #DBD7D7;
+        padding: 2rem;
+        span {
+            font-size: 1rem;
+        }
     }
 
 }
