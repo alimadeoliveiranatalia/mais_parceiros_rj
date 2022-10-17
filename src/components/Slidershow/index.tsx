@@ -1,6 +1,7 @@
 ﻿import { motion } from 'framer-motion';
 import styles from './styles.module.scss';
 import { useEffect, useRef, useState } from "react";
+import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
 
 const questionsAnswers = [
     {
@@ -51,23 +52,25 @@ export function SliderShow(){
                 className={styles.carousel}
                 whileTap={{ cursor: 'grabbing'}}
             >
-                <motion.div
-                    className={styles.inner}
-                    drag='x'
-                    dragConstraints={{ right: 0, left: -widthSlider }}
-                    initial={{ x:100 }}
-                    animate={{ x:0 }}
-                    transition={{ duration: 0.8 }}
-                >
-                    {questionsAnswers.map(item => (
-                        <motion.div
-                            
-                            className={styles.item}    
-                        >
-                            <div><span>{item.question}</span>{item.answer}</div>
-                        </motion.div>
-                    ))}
-                </motion.div>
+              <AiOutlineLeft />
+              <motion.div
+                  className={styles.inner}
+                  drag='x'
+                  dragConstraints={{ right: 0, left: -widthSlider }}
+                  initial={{ x:100 }}
+                  animate={{ x:0 }}
+                  transition={{ duration: 0.8 }}
+              >
+                  {questionsAnswers.map(item => (
+                      <motion.div
+                          
+                          className={styles.item}    
+                      >
+                          <div><span>{item.question}</span>{item.answer}</div>
+                      </motion.div>
+                  ))}
+              </motion.div>
+              <AiOutlineRight />
             </motion.div>
         </div>
     )
