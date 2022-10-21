@@ -1,14 +1,17 @@
 ﻿.slider{
-    width: 100%;
+    width: 1112rem;
     max-width: 66.25rem;
     margin: 0 auto;
     min-height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 0.625rem;
+    
 }
 .carousel{
     cursor: grab;
+    gap: 2.5rem;
     overflow: hidden;
     background-color: purple;
 }
@@ -19,7 +22,7 @@
 .item {
     min-height: 14.5rem;
     min-width: 25rem;
-    padding: 0.875rem;
+    padding: 0.855rem;
     
     div {
         width: 20rem;
@@ -28,9 +31,22 @@
         pointer-events: none;
         background-color: #DBD7D7;
         padding: 2rem;
+        margin: 1rem;
         span {
+            width: 20rem;
+            height: 1.75rem;
+            font-style: normal;
+            font-weight: 700;
             font-size: 1rem;
+            line-height: 1.75rem;
+        }
+        p {
+           font-style: normal;
+           text-align: justify;
+            font-weight: 400;
+            font-size: 0.85rem;
+            line-height: 1.75rem;
         }
     }
-
 }
+
