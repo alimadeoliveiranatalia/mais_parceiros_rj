@@ -64,13 +64,15 @@ export function SliderShow(){
 
     return(
         <div className={styles.slider}>
+          <button
+            className={styles.iconButton}
+          ><AiOutlineLeft /></button>
             <motion.div
-              key={index}
+              
               ref={ carousel }
               className={styles.carousel}
               whileTap={{ cursor: 'grabbing'}}
             >
-              <AiOutlineLeft />
               <motion.div
                 className={styles.inner}
                 drag='x'
@@ -87,8 +89,11 @@ export function SliderShow(){
                   </motion.div>
                 ))}
               </motion.div>
-              <AiOutlineRight />
+              
             </motion.div>
+            <button
+              className={styles.iconButton}
+            ><AiOutlineRight /></button>
         </div>       
     )
 }

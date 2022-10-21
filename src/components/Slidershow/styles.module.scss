@@ -30,7 +30,7 @@
         border-radius: 0.75rem;
         pointer-events: none;
         background-color: #DBD7D7;
-        padding: 2rem;
+        padding: 1rem;
         margin: 1rem;
         span {
             width: 20rem;
@@ -49,4 +49,9 @@
         }
     }
 }
-
+.iconButton{
+    width: 4rem;
+    height: 4rem;
+    position: relative;
+    
+}
