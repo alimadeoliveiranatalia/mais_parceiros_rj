@@ -2,7 +2,7 @@ import Head from 'next/head';
 import { Accordion } from '../src/components/Accordion';
 import { Footer } from '../src/components/Footer';
 import { LinkYoutube } from '../src/components/LinkYoutube';
-import { SliderShow } from '../src/components/Slidershow';
+import { SliderCarousel } from '../src/components/Slidershow';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
           <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 
           como demostrar os benefícios em ser um parceiro deste programa.</p>
           <p>O programa estabelece os seguintes benefícios:</p>
-          <SliderShow />
+          <SliderCarousel />
         </section>
       </div>
       <div className={styles.contentContainer}>

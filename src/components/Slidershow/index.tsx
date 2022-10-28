@@ -1,4 +1,4 @@
-﻿import { motion, useScroll } from 'framer-motion';
+﻿import { motion } from 'framer-motion';
 import styles from './styles.module.scss';
 import { useEffect, useRef, useState } from "react";
 import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
@@ -36,28 +36,23 @@ const questionsAnswers = [
 
 
 
-export function SliderShow(){
+export function SliderCarousel(){
     const carousel = useRef(null);
-    //const { scrollX } = useScroll({ container: carouselRef });
     const [ widthSlider, setWidthSlider ] = useState(0);
-    const [index, setIndex] = useState(0);
-
-    function nextStep(){
-      if(index === questionsAnswers.length -1){
-        setIndex(0);
-        return
-      }
-      setIndex(index+1);
+    
+    let boxSlider = carousel.current;
+        
+    function nextSlide(){
+      let width = boxSlider.clientWidth;
+      boxSlider.scrollLeft = boxSlider.scrollLeft + width;
+      console.log(width);
     }
 
-    function prevStep(){
-      if(index === 0){
-        setIndex(questionsAnswers.length -1);
-        return
-      }
-      setIndex(index-1);
+    function prevSlide(){
+      let width = boxSlider.clientWidth;
+      boxSlider.scrollLeft = boxSlider.scrollLeft - width;
+      console.log(width);
     }
-
     useEffect(() => {
         setWidthSlider(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
     },[]);
@@ -65,6 +60,7 @@ export function SliderShow(){
     return(
         <div className={styles.slider}>
           <button
+            onClick={prevSlide}
             className={styles.iconButton}
           ><AiOutlineLeft /></button>
             <motion.div
@@ -77,12 +73,14 @@ export function SliderShow(){
                 className={styles.inner}
                 drag='x'
                 dragConstraints={{ right: 0, left: -widthSlider }}
-                initial={{ x:0 }}
-                animate={{ x:-100 }}
-                transition={{ type: 'spring'}}
+                initial={{ x: 100 }}
+                animate={{ x: 0 }}
+                transition={{ type: 'spring', bounce: 0.25, delay: 0.7, duration: 1}}
+                
               >
                 {questionsAnswers.map(item => (
                   <motion.div                          
+                    key={item.question}
                     className={styles.item}
                   >
                     <div><span>{item.question}</span><p>{item.answer}</p></div>
@@ -92,6 +90,7 @@ export function SliderShow(){
               
             </motion.div>
             <button
+              onClick={nextSlide}
               className={styles.iconButton}
             ><AiOutlineRight /></button>
         </div>       
