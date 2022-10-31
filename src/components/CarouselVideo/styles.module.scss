@@ -1,0 +1,41 @@
+﻿.carrosel_video{
+    width: 1112rem;
+    max-width: 66.25rem;
+    margin: 0 auto;
+    min-height: 50vh;
+    display: static;
+    align-items: center;
+    justify-content: space-between;
+    background: #000000;
+    border-radius: 0rem 0rem 0.63rem 0.63rem;
+}
+.icon{
+    width: 4rem;
+    height: 4rem;
+    margin-top: 20rem;
+    padding: 1rem;
+    position: relative;
+    color: #FFFFFF;
+}
+.slider{
+    position: static;
+    width: 1099px;
+    height: 618.19px;
+    left: 411px;
+    top: 2491px;
+    display: flex;
+    iframe {
+        align-items: center;
+        justify-content: center;  
+        aspect-ratio: 16/9;
+        width: 66rem;
+        height: 18rem;
+        margin: 1rem;
+    }
+    span{
+        color: #FFFFFF;
+        margin: 1rem;
+        padding: 1rem;
+    }
+}
+
