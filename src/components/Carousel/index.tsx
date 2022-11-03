@@ -36,7 +36,7 @@ const questionsAnswers = [
 
 
 
-export function SliderCarousel(){
+export function Carousel(){
     const carousel = useRef(null);
     const [ widthSlider, setWidthSlider ] = useState(0);
     

@@ -1,7 +1,7 @@
 import Head from 'next/head';
-import { CarouselVideo } from '../src/components/CarouselVideo';
+import { SliderShowVideo } from '../src/components/SliderShowVideo';
 import { Footer } from '../src/components/Footer';
-import { SliderCarousel } from '../src/components/SliderCarousel';
+import { Carousel } from '../src/components/Carousel';
 import styles from '../styles/Home.module.scss';
 
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
           <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 
           como demostrar os benefícios em ser um parceiro deste programa.</p>
           <p>O programa estabelece os seguintes benefícios:</p>
-          <SliderCarousel />
+          <Carousel />
         </section>
       </div>
       <div className={styles.contentContainer}>
@@ -26,7 +26,7 @@ export default function Home() {
           <br />
           <h1>Depoimentos</h1>
           <p>Conheça o pragrama <strong>Mais Parceiros</strong> pelas palavras de quem já faz parte da nossa rede.</p>
-          <CarouselVideo />
+          <SliderShowVideo />
         </section>
       </div>
       <div className={styles.contentContainer}>
