@@ -79,9 +79,7 @@ export function SliderShowVideo(){
     }
     return (          
         <div className={styles.slider_video}>           
-            <div
-                className={styles.slider}
-            >
+            <div className={styles.slider}>
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.iframe
                         key={index}
@@ -98,8 +96,10 @@ export function SliderShowVideo(){
                     <span>{linkVideo[index].company}</span> 
                 </AnimatePresence>            
             </div>
-            <button onClick={prevVideo}><AiOutlineLeft className={styles.icon}/></button>            
-            <button onClick={nextVideo}><AiOutlineRight className={styles.icon} /></button>
+            <div className={styles.contentButton}>
+                <button className={styles.iconPrevButton} onClick={prevVideo}><AiOutlineLeft /></button>            
+                <button className={styles.iconNextButton} onClick={nextVideo}><AiOutlineRight  /></button>
+            </div>
         </div>
     )
 }
