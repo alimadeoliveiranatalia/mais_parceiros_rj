@@ -8,6 +8,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
     axeAccessibilityReporter();
   },[]);
+  
   return (
     <>
       <Header />
