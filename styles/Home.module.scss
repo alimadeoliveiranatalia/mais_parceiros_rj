@@ -1,15 +1,10 @@
-.contentContainer {
-  //max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  //height: calc(100vh - 5rem);
+.sectionContainer {
+  width: 100%;
+  max-width: 1110px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
+  margin: 0 auto;
   background: gray;
-}
-.hero {
-  //max-width: 1110px;
   h1 {
     color: var(--blue);
     font-size: 2.2rem;
@@ -21,6 +16,16 @@
     font-size: 1rem;
     line-height: 2.25rem;
     padding: auto;
-    margin-top: 1.5rem;
+    margin-top: 1.5rem auto;
+  }
+  ul {
+    margin: 1rem 1rem 0rem;
+    span {
+      padding: 2rem auto;
+    }
+    li {
+      margin-left: 2.5rem;
+      padding: auto;
+    }
   }
 }

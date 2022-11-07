@@ -16,17 +16,17 @@ const linkVideo = [
         company: 'Cisco' 
     },
     {
-        src: 'https://youtu.be/mzQZMOPcasQ',
+        src: 'https://www.youtube.com/watch?v=mzQZMOPcasQ',
         title: '+Parceiros – Nokia – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
         company: 'Nokia'
     },
     {
-        src: 'https://youtu.be/yy7_1qXX3j8',
+        src: 'https://www.youtube.com/watch?v=yy7_1qXX3j8',
         title: '+Parceiros – BMW – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
         company: 'BMW Automotiva'
     },
     {
-        src: 'https://youtu.be/7NlotjXvcIE',
+        src: 'https://www.youtube.com/watch?v=7NlotjXvcIE',
         title: '+Parceiros – Triumph – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
         company: 'Triumph'
     }
