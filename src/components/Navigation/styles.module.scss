@@ -1,0 +1,16 @@
+﻿.navigation{
+    width: 25%;
+    margin:  0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    a {
+        text-align: center;
+        margin: 0.5rem;
+        background-color: var(--blue);
+        color: #FFF;
+        font-size: 1.56rem;
+        border-radius: 10px;
+    }
+
+}

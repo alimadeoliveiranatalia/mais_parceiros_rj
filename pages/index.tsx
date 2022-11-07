@@ -4,6 +4,7 @@ import { Footer } from '../src/components/Footer';
 import { Carousel } from '../src/components/Carousel';
 import styles from '../styles/Home.module.scss';
 import { Form } from '../src/components/Form';
+import { Navigation } from '../src/components/Navigation/indext';
 
 export default function Home() {
   return (
@@ -17,6 +18,7 @@ export default function Home() {
           <p>O programa <strong>Mais Parceiros</strong> foi criado com o intuito de estabelecer um canal direto de comunicação entre o 
           <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 
           como demostrar os benefícios em ser um parceiro deste programa.</p>
+          <Navigation />
           <p>O programa estabelece os seguintes benefícios:</p>
           <Carousel />
         </section>
