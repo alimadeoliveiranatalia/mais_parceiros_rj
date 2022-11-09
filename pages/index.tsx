@@ -24,12 +24,12 @@ export default function Home() {
         </section>
         <section className={styles.sectionContainer}>
           <br />
-          <h1>Depoimentos</h1>
+          <h1 id="depoimentos">Depoimentos</h1>
           <p>Conheça o pragrama <strong>Mais Parceiros</strong> pelas palavras de quem já faz parte da nossa rede.</p>
           <SliderShowVideo />
         </section>
         <section className={styles.sectionContainer}>
-          <h1>Modelos de Paceria</h1>
+          <h1 id="editais">Modelos de Paceria</h1>
           <p>O <strong>SENAI-SP</strong> estabelece suas parcerias por meio de modelos de negócios que estabelecem contrapartidas, 
           visando ganhos bilaterais entre os paceiros</p>
           <ul>
@@ -47,7 +47,7 @@ export default function Home() {
           </ul>
         </section>
         <section className={styles.sectionContainer}>
-          <h1>Como fazer parte</h1>
+          <h1 id="seja_parceiro">Como fazer parte</h1>
           <p>Caso sua empresa esteja interessada em se tornar uma parceria do <strong>SENAI-SP</strong></p>
           <Form />
         </section>      
