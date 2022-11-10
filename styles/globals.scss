@@ -25,6 +25,16 @@
     font-size: 87.5%
   }
 }
+/*@media (max-width: 425px){
+  .sectionContainer {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem;
+    background-color: gray;
+  }
+}*/
 
 body {
   background: var(--white);

@@ -1,5 +1,6 @@
 ﻿.slider_video{
-    width: 1100px;
+    width: 90%;
+    max-width: 1100px;
     height: 736px;
     background-color: #000000;
     display: flex;
@@ -9,7 +10,8 @@
     
 }
 .slider{
-    width: 1099px;
+    width:90%;
+    max-width: 1099px;
     height: 726px;
     margin-top: 20px;
     aspect-ratio: calc(16/9);
