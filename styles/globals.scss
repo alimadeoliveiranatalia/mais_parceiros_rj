@@ -26,6 +26,11 @@
   }
 }
 
+@media (max-width: 423px){
+  .headerContent{
+    display: none;
+  }
+}
 body {
   background: var(--white);
   color: var(--black);
