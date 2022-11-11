@@ -4,6 +4,8 @@ import { ImFacebook, ImTwitter, ImYoutube, ImInstagram } from 'react-icons/im';
 import styles from './styles.module.scss';
 
 export function Header(){
+    const window = document.defaultView;
+
     return (
         <header className={styles.headerConteiner}>
             <div className={styles.headerContent}>
@@ -12,7 +14,7 @@ export function Header(){
                <a href="http://www.sp.senai.br/" >SENAI</a>
                <a href="http://www.fiesp.com.br/instituto-roberto-simonsen-irs/" >IRS</a>
             </div>
-            <Image src={logo} alt='logo Senai'width={235} height={88.23}/>
+            <Image src={logo} alt='Senai Mais Parceiros' width={235} height={88.23}/>
             <div className={styles.headerContent}>
                <a href="#" ><ImFacebook /></a>
                <a href="#" ><ImTwitter /></a>
