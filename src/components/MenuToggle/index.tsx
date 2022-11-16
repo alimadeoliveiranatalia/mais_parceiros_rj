@@ -1,54 +1,32 @@
-﻿import { useRef, useEffect } from 'react';
-import { motion, useCycle } from 'framer-motion';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import styles from './styles.module.scss';
+﻿import { useState } from 'react';
+import { AiOutlineMenu } from 'react-icons/ai';
+import { ImFacebook, ImTwitter, ImYoutube, ImInstagram } from 'react-icons/im';
 
-const sideBar = {
-    open: (height = 1000) => ({
-        clipPath: `circle(${height * 2 + 200}px at 40px 40px)`,
-        transition: {
-            type: 'spring',
-            stiffness: 20,
-            restDelta: 2
-        }
-    }),
-    close: {
-        clipPath: 'circle(30px at 40px 40px)',
-        transition: {
-            delay: 0.5,
-            type: 'spring',
-            stiffness: 400,
-            damping: 40
-        }
-    }
-}
+import style from './styles.module.scss';
+
 
 export function MenuToggle(){
-    const [isOpen, toggleOpen ] = useCycle(false, true);
-    const containerRef = useRef(null);
-    const { height } = useDimensions(containerRef);
-
-    function useDimensions(ref){
-        const dimensions = useRef({with: 0, height: 0});
-
-        useEffect(() => {
-            dimensions.current.with = ref.current.offsetWidth;
-            dimensions.current.height = ref.current.offsetHeight;
-        },[]);
-
-        return dimensions.current;
+    const [openMenu, setOpenMenu] = useState(false);
+    
+    function handleOpenMenu(){
+        setOpenMenu(!openMenu);
     }
+
     return (
-        <motion.div
-            ref={containerRef}
-            initial={false}
-            animate={ isOpen ? 'open' : 'closed' }
-            custom={height}
-        
-        >
-            <button
-                onClick={() => toggleOpen()}
-            ><AiOutlineMenu /><AiOutlineClose/></button>
-        </motion.div>
+        <div>
+            <button onClick={ handleOpenMenu }><AiOutlineMenu /></button>
+            { openMenu ? (
+                <div>
+                    <a aria-label='Site FIESP' href="http://www.fiesp.com.br/" >FIESP</a>
+                    <a aria-label='Site CIESP' href="http://www.ciesp.com.br/" >CIESP</a>
+                    <a aria-label='Site SENAI' href="http://www.sp.senai.br/" >SENAI</a>
+                    <a aria-label='Site Instituto Roberto Simonsen' href="http://www.fiesp.com.br/instituto-roberto-simonsen-irs/" >IRS</a>
+                    <a aria-label='Perfil no Facebook' href="#" ><ImFacebook /></a>
+                    <a aria-label='Página do Twitter' href="#" ><ImTwitter /></a>
+                    <a aria-label='Canal no Youtube' href="#" ><ImYoutube /></a>
+                    <a aria-label='Perfil no Instagram' href="#" ><ImInstagram /></a>
+                </div>
+            ) : null }
+        </div>
     )
 }
