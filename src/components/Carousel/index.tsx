@@ -60,6 +60,7 @@ export function Carousel(){
     return(
         <div className={styles.slider}>
           <button
+            aria-label='click para o anterior'
             onClick={prevSlide}
             className={styles.iconButton}
           ><AiOutlineLeft /></button>
@@ -90,6 +91,7 @@ export function Carousel(){
               
             </motion.div>
             <button
+              aria-label='click para o posterior'
               onClick={nextSlide}
               className={styles.iconButton}
             ><AiOutlineRight /></button>

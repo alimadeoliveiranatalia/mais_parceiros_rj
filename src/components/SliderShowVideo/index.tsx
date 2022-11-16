@@ -88,6 +88,7 @@ export function SliderShowVideo(){
                         initial="initial"
                         animate="animate"
                         exit="exit"
+                        aria-label='Depoimento da empresa `${linkVideo[index].company}`'
                         src={linkVideo[index].src}
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -97,8 +98,8 @@ export function SliderShowVideo(){
                 </AnimatePresence>            
             </div>
             <div className={styles.contentButton}>
-                <button className={styles.iconPrevButton} onClick={prevVideo}><AiOutlineLeft /></button>            
-                <button className={styles.iconNextButton} onClick={nextVideo}><AiOutlineRight  /></button>
+                <button aria-label='click para o vídeo anterior' className={styles.iconPrevButton} onClick={prevVideo}><AiOutlineLeft /></button>            
+                <button aria-label='click para o vídeo posterior' className={styles.iconNextButton} onClick={nextVideo}><AiOutlineRight  /></button>
             </div>
         </div>
     )

@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 
 export function Footer(){
     return(
-        <footer className={styles.footerConteiner}>
+        <footer role='contentinfo' className={styles.footerConteiner}>
             <div className={styles.footerContent}>
                 <div>
                     <span> 
