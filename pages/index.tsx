@@ -5,10 +5,12 @@ import { Carousel } from '../src/components/Carousel';
 import styles from '../styles/Home.module.scss';
 import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
+import { MenuToggle } from '../src/components/MenuToggle';
 
 export default function Home() {
   return (
     <>
+      <MenuToggle/> 
       <Head>
         <title>Senai Parceiros</title>
       </Head>
