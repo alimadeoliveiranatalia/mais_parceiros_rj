@@ -5,15 +5,11 @@ import { Carousel } from '../src/components/Carousel';
 import styles from '../styles/Home.module.scss';
 import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
-import { MenuToggle } from '../src/components/MenuToggle';
 
 export default function Home() {
+  //const max_width = window.innerWidth;
   return (
     <>
-      <MenuToggle/> 
-      <Head>
-        <title>Senai Parceiros</title>
-      </Head>
         <main>
           <section  className={styles.sectionContainer}>
             <br />
