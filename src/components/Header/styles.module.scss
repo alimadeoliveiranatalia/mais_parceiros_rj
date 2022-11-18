@@ -27,7 +27,23 @@
             color: var(--gray-300);
         }
     }
-    /*@media(max-width: 560px){
+}
+.menu{
+    display: none;
+}
+@media(max-width: 560px){
+    .headerConteiner{
+        display: flex;
+
+    }
+    .headerContent{
         display: none;
-    }*/
+    }
+    .menu{
+        display: inline-block;
+        position: absolute;
+        left: 78%;
+        top: 0;
+    }
+    
 }

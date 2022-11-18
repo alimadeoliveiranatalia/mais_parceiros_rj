@@ -5,14 +5,16 @@ import { Carousel } from '../src/components/Carousel';
 import styles from '../styles/Home.module.scss';
 import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
+import { MenuToggle } from '../src/components/MenuToggle';
 
 export default function Home() {
-  //const max_width = window.innerWidth;
   return (
     <>
+      <Head><title>Senai + Parceiros</title></Head>
         <main>
           <section  className={styles.sectionContainer}>
             <br />
+            <MenuToggle />
             <h1>Mais Parceiros</h1>
             <p>O programa <strong>Mais Parceiros</strong> foi criado com o intuito de estabelecer um canal direto de comunicação entre o 
             <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 

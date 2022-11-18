@@ -1,11 +1,14 @@
-﻿import Image from 'next/image';
+﻿import { useState } from 'react';
+import Image from 'next/image';
 import logo from '../../../public/images/assinatura_+parceiros_senaisp_CMYK_CMYK_300DPI_NEGATIVO.png';
 import { ImFacebook, ImTwitter, ImYoutube, ImInstagram } from 'react-icons/im';
 import styles from './styles.module.scss';
+import { MenuToggle } from '../MenuToggle';
 
 export function Header(){
     return (
         <header role='banner' className={styles.headerConteiner}>
+            <div className={styles.menu}><MenuToggle /></div>
             <div id='institutos_parceiros' className={styles.headerContent}>
                <a aria-label='Site FIESP' href="http://www.fiesp.com.br/" >FIESP</a>
                <a aria-label='Site CIESP' href="http://www.ciesp.com.br/" >CIESP</a>

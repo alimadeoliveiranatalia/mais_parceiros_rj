@@ -12,7 +12,7 @@ export function MenuToggle(){
 
     return (
         <div className={style.menu}>
-            <button className={style.toggle_button} onClick={ handleOpenMenu }>{ openMenu ? <AiOutlineClose/> : <AiOutlineMenu /> }</button>
+            <button className={style.toggle_button} onClick={ handleOpenMenu }>{ openMenu ? <AiOutlineClose /> : <AiOutlineMenu />}</button>
             { openMenu ? (
                 <div className={style.content}>
                     <a aria-label='Site FIESP' href="http://www.fiesp.com.br/" >FIESP</a>
