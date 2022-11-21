@@ -4,6 +4,23 @@ import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import style from './styles.module.scss';
 import { VerifyDimensions } from '../../utils/verifyDimensions';
 
+const navigation_variants = {
+    open: {
+        transition: {
+            type: 'spring',
+            stiffness: 20,
+            restDelta: 2
+        }
+    },
+    close: {
+        transition: {
+            delay: 0.5,
+            type: 'spring',
+            stiffness: 400,
+            damping: 40
+        }
+    }
+}
 const container_variants = {
     hidden: {
         opacity: 0
@@ -23,7 +40,9 @@ const item_variants = {
     },
       
     show: {
-    opacity: 1
+        opacity: 1,
+        x: 10,
+        transition: { duration: 0.5 }
     }
 } 
 
@@ -86,6 +105,7 @@ export function MenuToggle(){
             ref={containerRef}
             className={style.menu}
             custom={height}
+            variants={navigation_variants}
         >
             <button className={style.toggle_button} onClick={ handleOpenMenu }>{ openMenu ? <AiOutlineClose /> : <AiOutlineMenu />}</button>
             { openMenu ? (
