@@ -1,5 +1,4 @@
 ﻿.headerConteiner {
-    height: 5rem;
     border-bottom: 1px solid var(--gray-300);
     background-color: var(--blue);
     display: flex;
@@ -28,22 +27,20 @@
         }
     }
 }
-.menu{
+.show_menu_toggle{
     display: none;
 }
 @media(max-width: 560px){
     .headerConteiner{
         display: flex;
-
     }
     .headerContent{
         display: none;
     }
-    .menu{
-        display: inline-block;
-        position: absolute;
-        left: 78%;
-        top: 0;
+    .show_menu_toggle{
+        display: flex;
+        margin-left: 75px;
+        //top: 0;
     }
     
 }

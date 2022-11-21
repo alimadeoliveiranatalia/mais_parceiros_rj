@@ -2,9 +2,6 @@
     background: green;
     display: flex;
     flex-direction: row-reverse;
-    //width: 75%;
-    //justify-content: flex-end;
-    //position: absolute;
 }
 .toggle_button {
     margin: 1rem;
@@ -23,13 +20,16 @@
     flex-direction: column;
     background-color: cadetblue;
     justify-content: flex-end;
-    //position: absolute;
     z-index: 10;
+    
+    li {
+        list-style-type: none;
+        text-align: center;
+    }
 
     a {
         color: var(--white);
         display: flex;
-        //position: relative;
         padding: 1rem;
         width: 80px;
         border-radius: 5px;

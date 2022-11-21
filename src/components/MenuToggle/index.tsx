@@ -1,30 +1,110 @@
-﻿import { useState } from 'react';
+﻿import { useState, useRef } from 'react';
+import { motion } from 'framer-motion';
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import style from './styles.module.scss';
+import { VerifyDimensions } from '../../utils/verifyDimensions';
+
+const container_variants = {
+    hidden: {
+        opacity: 0
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            delayChildren: 0.5,
+            staggerDirection: -1
+        }
+    }
+}
+
+const item_variants = {
+    hidden: {
+        opacity: 0
+    },
+      
+    show: {
+    opacity: 1
+    }
+} 
+
+
+const links = [
+    {
+        'aria_label':'Site FIESP',
+        'href': 'http://www.fiesp.com.br/',
+        'name': 'FIESP'
+    },
+    {
+        'aria_label':'Site CIESP',
+        'href': 'http://www.ciesp.com.br/',
+        'name': 'CIESP'
+    },
+    {
+        'aria_label':'Site SENAI',
+        'href':'http://www.sp.senai.br/',
+        'name':'SENAI'
+    },
+    {
+        'aria_label':'Site Instituto Roberto Simonsen',
+        'href':'http://www.fiesp.com.br/instituto-roberto-simonsen-irs/',
+        'name':'IRS'
+    },
+    {
+        'aria_label':'Perfil no Facebook',
+        'href':'#',
+        'name':'FACEBOOK'
+    },
+    {
+        'aria_label':'Perfil na Twitter',
+        'href':'#',
+        'name':'TWITTER',
+    },
+    {
+        'aria_label':'Perfil no Instagram',
+        'href':'#',
+        'name':'INSTAGRAM',
+    },
+    {
+        'aria_label':'Canal no YouTube',
+        'href':'#',
+        'name':'YOUTUBE',
+    }
+]
 
 
 export function MenuToggle(){
     const [openMenu, setOpenMenu] = useState(false);
+    const containerRef = useRef(null);
+    const { height } = VerifyDimensions(containerRef);
     
     function handleOpenMenu(){
         setOpenMenu(!openMenu);
     }
 
     return (
-        <div className={style.menu}>
+        <motion.nav
+            ref={containerRef}
+            className={style.menu}
+            custom={height}
+        >
             <button className={style.toggle_button} onClick={ handleOpenMenu }>{ openMenu ? <AiOutlineClose /> : <AiOutlineMenu />}</button>
             { openMenu ? (
-                <div className={style.content}>
-                    <a aria-label='Site FIESP' href="http://www.fiesp.com.br/" >FIESP</a>
-                    <a aria-label='Site CIESP' href="http://www.ciesp.com.br/" >CIESP</a>
-                    <a aria-label='Site SENAI' href="http://www.sp.senai.br/" >SENAI</a>
-                    <a aria-label='Site Instituto Roberto Simonsen' href="http://www.fiesp.com.br/instituto-roberto-simonsen-irs/" >IRS</a>
-                    <a aria-label='Perfil no Facebook' href="#" >FACEBOOK</a>
-                    <a aria-label='Perfil no Twitter' href="#" >TWITTER</a>
-                    <a aria-label='Canal no Youtube' href="#" >YOUTUBE</a>
-                    <a aria-label='Perfil no Instagram' href="#" >INSTAGRAM</a>
-                </div>
+                <motion.ul
+                    key='item'
+                    className={style.content}
+                    variants={container_variants}
+                    initial='hidden'
+                    animate='show'
+                >
+                    { links.map(item => (
+                        <motion.li
+                           variants={item_variants}
+                        >
+                            <a aria-label={item.aria_label} href={item.href} >{item.name}</a>
+                        </motion.li>
+                    ))}
+                </motion.ul>
             ) : null }
-        </div>
+        </motion.nav>
     )
 }
