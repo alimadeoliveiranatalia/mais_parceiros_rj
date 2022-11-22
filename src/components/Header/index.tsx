@@ -1,9 +1,7 @@
-﻿import { useState } from 'react';
-import Image from 'next/image';
+﻿import Image from 'next/image';
 import logo from '../../../public/images/assinatura_+parceiros_senaisp_CMYK_CMYK_300DPI_NEGATIVO.png';
 import { ImFacebook, ImTwitter, ImYoutube, ImInstagram } from 'react-icons/im';
 import styles from './styles.module.scss';
-import { MenuToggle } from '../MenuToggle';
 
 export function Header(){
     return (
@@ -16,7 +14,6 @@ export function Header(){
                <a aria-label='Site Instituto Roberto Simonsen' href="http://www.fiesp.com.br/instituto-roberto-simonsen-irs/" >IRS</a>
             </div>
             <Image src={logo} alt='Senai Mais Parceiros' width={235} height={88.23}/>
-            <div className={styles.show_menu_toggle}><MenuToggle /></div>
             <div id='redes_sociais' className={styles.headerContent}>
                <a aria-label='Perfil no Facebook' href="#" ><ImFacebook /></a>
                <a aria-label='Página do Twitter' href="#" ><ImTwitter /></a>

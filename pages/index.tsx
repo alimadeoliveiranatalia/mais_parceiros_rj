@@ -1,13 +1,36 @@
 import Head from 'next/head';
 import { SliderShowVideo } from '../src/components/SliderShowVideo';
-import { Footer } from '../src/components/Footer';
 import { Carousel } from '../src/components/Carousel';
 import styles from '../styles/Home.module.scss';
 import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
 import { MenuToggle } from '../src/components/MenuToggle';
+import { motion, useAnimation, useInView } from 'framer-motion';
+import { useEffect, useRef } from 'react';
+
+const section_variants = {
+  hidden: {
+    opacity: 0
+  },
+  visible: {
+    opacity: 1,
+    transition: { duration: 0.5 }
+  }
+}
 
 export default function Home() {
+  const depoimentosRef = useRef();
+  const control = useAnimation();
+  const isInView = useInView(depoimentosRef);
+
+  useEffect(() => {
+    if(isInView){
+      control.start('visible');
+    } else {
+      control.start('hidden');
+    }
+  }, [control, isInView]);
+
   return (
     <>
       <Head><title>Senai + Parceiros</title></Head>
@@ -23,12 +46,17 @@ export default function Home() {
             <p>O programa estabelece os seguintes benefícios:</p>
             <Carousel />
           </section>
-          <section className={styles.sectionContainer}>
+          <motion.section 
+            ref={ depoimentosRef }
+            variants={section_variants}
+            initial='hidden'
+            animate={ control }
+            className={styles.sectionContainer}>
             <br />
             <h1 id="depoimentos">Depoimentos</h1>
             <p>Conheça o pragrama <strong>Mais Parceiros</strong> pelas palavras de quem já faz parte da nossa rede.</p>
             <SliderShowVideo />
-          </section>
+          </motion.section>
           <section className={styles.sectionContainer}>
             <h1 id="editais">Modelos de Paceria</h1>
             <p>O <strong>SENAI-SP</strong> estabelece suas parcerias por meio de modelos de negócios que estabelecem contrapartidas, 
@@ -53,7 +81,6 @@ export default function Home() {
             <Form />
           </section>
         </main>      
-      <Footer />
     </>
   )
 }
