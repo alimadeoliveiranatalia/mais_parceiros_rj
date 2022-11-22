@@ -20,9 +20,13 @@ const section_variants = {
 
 export default function Home() {
   const depoimentosRef = useRef();
-  const control = useAnimation();
-  const isInView = useInView(depoimentosRef);
+  const editaisRef = useRef();
+  const sejaParceiroRef = useRef();
 
+  const control = useAnimation();
+  
+  const isInView = useInView(depoimentosRef);
+  
   useEffect(() => {
     if(isInView){
       control.start('visible');
@@ -35,9 +39,9 @@ export default function Home() {
     <>
       <Head><title>Senai + Parceiros</title></Head>
         <main>
+          <MenuToggle />
           <section  className={styles.sectionContainer}>
             <br />
-            <MenuToggle />
             <h1>Mais Parceiros</h1>
             <p>O programa <strong>Mais Parceiros</strong> foi criado com o intuito de estabelecer um canal direto de comunicação entre o 
             <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 
@@ -48,16 +52,20 @@ export default function Home() {
           </section>
           <motion.section 
             ref={ depoimentosRef }
+            className={styles.sectionContainer}
             variants={section_variants}
             initial='hidden'
-            animate={ control }
-            className={styles.sectionContainer}>
+            animate={control}>
             <br />
             <h1 id="depoimentos">Depoimentos</h1>
             <p>Conheça o pragrama <strong>Mais Parceiros</strong> pelas palavras de quem já faz parte da nossa rede.</p>
             <SliderShowVideo />
           </motion.section>
-          <section className={styles.sectionContainer}>
+          <motion.section
+            ref={editaisRef}
+            className={styles.sectionContainer}
+            variants={section_variants}
+          >
             <h1 id="editais">Modelos de Paceria</h1>
             <p>O <strong>SENAI-SP</strong> estabelece suas parcerias por meio de modelos de negócios que estabelecem contrapartidas, 
             visando ganhos bilaterais entre os paceiros</p>
@@ -74,12 +82,14 @@ export default function Home() {
               <li><a>Comodato Escolas Móveis</a></li>
               <li><a>Cessão Não-onerosa de Software</a></li>
             </ul>
-          </section>
-          <section className={styles.sectionContainer}>
+          </motion.section>
+          <motion.section
+            ref={sejaParceiroRef}
+            className={styles.sectionContainer}>
             <h1 id="seja_parceiro">Como fazer parte</h1>
             <p>Caso sua empresa esteja interessada em se tornar uma parceria do <strong>SENAI-SP</strong></p>
             <Form />
-          </section>
+          </motion.section>
         </main>      
     </>
   )
