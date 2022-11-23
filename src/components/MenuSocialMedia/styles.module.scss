@@ -1,0 +1,20 @@
+﻿.navConteiner {
+    width: 193px;
+    height: 5rem;
+    margin-left: 79%;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+
+    a {
+        display: inline-block;
+        color: var(--blue);
+        position: relative;
+        padding: 0 0.5rem;
+        transition: color 0.2s;
+
+        &:hover {
+            color: var(--gray-300);
+        }
+    }
+}

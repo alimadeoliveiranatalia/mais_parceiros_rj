@@ -1,21 +1,20 @@
-﻿import { motion } from 'framer-motion';
-import styles from './styles.module.scss';
+﻿import styles from './styles.module.scss';
 
 const links = [
     {
         'aria_label':'Depoimentos',
         'href':'#depoimentos',
-        'description': 'Depoimentos de quem já fez parte'
+        'description': 'DEPOIMENTOS DE QUEM JÁ FAZ PARTE'
     },
     {
         'aria_label':'Editais',
         'href':'#editais',
-        'description': 'Acesse o Edital para Parcerias'
+        'description': 'ACESSE O EDITAL PARA PARCERIAS'
     },
     {
         'aria_label':'Formulário de Participação',
         'href':'#seja_parceiro',
-        'description': 'Saiba como fazer parte'
+        'description': 'SAIBA COMO FAZER PARTE'
     }
 ]
 
