@@ -4,7 +4,6 @@ import { Carousel } from '../src/components/Carousel';
 import styles from '../styles/Home.module.scss';
 import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
-import { MenuToggle } from '../src/components/MenuToggle';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
 
 export default function Home() {
@@ -14,8 +13,10 @@ export default function Home() {
         <main>
           <section  className={styles.sectionContainer}>
             <br />
-            <h1>Mais Parceiros</h1>
-            <MenuSocialMedia />
+            <div className={styles.title}>
+              <h1>Mais Parceiros</h1>
+              <MenuSocialMedia />
+            </div>
             <h2>SOBRE O MAIS PARCEIROS</h2>
             <p>O programa <strong>Mais Parceiros</strong> foi criado com o intuito de estabelecer um canal direto de comunicação entre o 
             <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 

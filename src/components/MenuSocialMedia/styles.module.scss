@@ -1,19 +1,24 @@
-﻿.navConteiner {
-    width: 193px;
-    height: 5rem;
+﻿$color-visual: var(--blue);
+$color-gray-hover: var(--gray-300);
+.navConteiner {
     padding: 0 2rem;
     display: flex;
     align-items: center;
 
     a {
         display: inline-block;
-        color: var(--blue);
+        color: $color-visual;
         position: relative;
         padding: 0 0.5rem;
         transition: color 0.2s;
 
         &:hover {
-            color: var(--gray-300);
+            color: $color-gray-hover;
         }
+    }
+}
+@media(max-width: 560px){
+    .navConteiner{
+        display: none;
     }
 }

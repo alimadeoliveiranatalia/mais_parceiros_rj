@@ -15,7 +15,6 @@
     line-height: 2.688rem;
     padding-bottom: 10px;
     margin-bottom: 8px;
-    //background: ghostwhite;
   }
   h2 {
     font-size: 1.25rem;
@@ -42,4 +41,8 @@
       padding: auto;
     }
   }
+}
+.title {
+  display: flex;
+  justify-content: space-between;
 }
