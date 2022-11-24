@@ -21,9 +21,9 @@ const links = [
 export function Navigation(){
     return (
         <nav role='navigation'  className={styles.navigation}>
-            {links.map(item => (
+            {links.map((item, id) => (
                 <a
-                    key='item'    
+                    key={id}    
                     aria-label={item.aria_label}
                     href={item.href}
                 >
