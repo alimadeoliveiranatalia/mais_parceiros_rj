@@ -4,7 +4,7 @@ import styles from './styles.module.scss';
 export function Header(){
     return (
         <header role='banner' className={styles.headerContent}>
-            <div>
+            <div className={styles.header_itens}>
                 <AiFillHome/>
                 <AiOutlineRight  />
                 <span>Mais Parceiros</span>

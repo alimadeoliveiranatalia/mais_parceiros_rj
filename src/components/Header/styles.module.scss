@@ -1,19 +1,28 @@
 ﻿$color-border: #333333;
+$color-banner: var(--gray-200);
+$color-visual: var(--blue);
+
 .headerContent{
     height: 8.25rem;
-    background: var(--gray-200);
-    left: 0;
-    top: 0;
+    background: $color-banner;
+    display: flex;
+    justify-content: flex-start;
     div {
         width: 11.553rem;
+        background-color: $color-banner;
         height: 1.573rem;
         left: 11.313rem;
         top: 5.399rem;
-        border: 1px solid $color-border;
+        color: $color-visual;
 
         span {
             border-radius: 0.94rem;
-            border: 0.064rem solid $color-border; 
         }
     }
+}
+.header_itens {
+    margin: 5rem 0.5rem 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
