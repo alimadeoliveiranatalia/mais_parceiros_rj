@@ -17,6 +17,7 @@ export default function Home() {
               <h1>Mais Parceiros</h1>
               <MenuSocialMedia />
             </div>
+            <br />
             <h2>SOBRE O MAIS PARCEIROS</h2>
             <p>O programa <strong>Mais Parceiros</strong> foi criado com o intuito de estabelecer um canal direto de comunicação entre o 
             <strong> SENAI</strong> e seus futuros parceiros, apresentar as diretrizes e modelos para consecução de novas parcerias, bem 
