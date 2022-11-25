@@ -1,6 +1,6 @@
 ## Interface Senai + Parceiros
 
-Confira o Layout no Figma:[https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4j2YYMNGJ219kmvi7vTycS%2FSENAI-%252BParceiros%3Fnode-id%3D0%253A1%26t%3D6pAJ7drO3lUkQZoN-1](Layout_Senai_Mais_Parceiros)
+Confira o Layout no Figma:[Layout_Senai_Mais_Parceiros](https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F4j2YYMNGJ219kmvi7vTycS%2FSENAI-%252BParceiros%3Fnode-id%3D0%253A1%26t%3D6pAJ7drO3lUkQZoN-1)
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
