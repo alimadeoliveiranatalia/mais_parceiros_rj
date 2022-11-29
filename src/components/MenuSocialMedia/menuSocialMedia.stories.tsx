@@ -1,9 +1,9 @@
 ﻿import { Meta, StoryObj} from '@storybook/react';
-import { Header } from './';
+import { MenuSocialMedia } from './';
 
 export default {
-    component: Header,
-    title: 'components/Header',
+    component: MenuSocialMedia,
+    title: 'components/MenuSocialMedia'
 } as Meta;
 
 export const Default: StoryObj = {}
