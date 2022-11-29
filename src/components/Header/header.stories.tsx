@@ -2,5 +2,6 @@
 
 export default {
     component: Header,
-    title: 'Header',
+    title: 'components/Header',
 }
+export const Default = {}
