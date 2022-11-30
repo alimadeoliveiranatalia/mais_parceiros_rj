@@ -1,11 +1,11 @@
 ﻿import "../styles/globals.scss";
-import Image from "next/image";
+import * as NextImage from "next/image";
 
-const image = Image.default;
+const OriginalNextImage = NextImage.default;
 
-Object.defineProperty(Image, 'default', {
+Object.defineProperty(NextImage, 'default', {
   configurable: true,
-  value: (props) => <image {...props} unoptimized />
+  value: (props) => <OriginalNextImage {...props} unoptimized />
 });
 
 export const parameters = {

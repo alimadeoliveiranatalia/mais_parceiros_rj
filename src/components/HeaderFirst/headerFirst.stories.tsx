@@ -1,5 +1,4 @@
 ﻿import { Meta, StoryObj } from "@storybook/react";
-import  Image from "next/image";
 import logo from '../../../public/images/assinatura_+parceiros_senaisp_CMYK_CMYK_300DPI_NEGATIVO.png';
 import { HeaderFirst } from "./";
 
@@ -13,4 +12,5 @@ const image = {
     alt: 'Senai Mais Parceiros'
 }
 
-export const Default = {}
+//export const Default = () => <img src={image.src} alt={image.alt} />
+export const Default : StoryObj = {}
