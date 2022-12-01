@@ -1,5 +1,4 @@
 ﻿.accordionItem {
-    background: coral;
     summary {
         margin: 2rem 2rem 0.12rem 2rem;
         display: flex;
@@ -18,13 +17,11 @@
 
     div {
         width: auto;
-        height: auto;
-
-        
+        height: auto;       
         
         p {
             font-size: 1.13rem;
-            margin: 0rem 1rem 0rem 3rem;
+            margin: 1rem auto;
             padding: 1.12rem 0rem 1.12rem 0rem;
             color: var(--gray-300);
             transform: rotate(720deg);
