@@ -23,7 +23,9 @@ export function AccordionItem({ item, index}: params){
                 </summary>
                 <p
                     key={index + 1}
-                >{item.answer}</p>
+                >
+                    {item.answer}
+                </p>
             </details>
         </div>
     )
