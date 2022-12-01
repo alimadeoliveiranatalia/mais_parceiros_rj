@@ -3,7 +3,15 @@ import { AiOutlineDown, AiOutlineUp } from "react-icons/ai";
 
 import styles from './styles.module.scss';
 
-export function AccordionItem({ item, index}){
+interface params {
+    item: {
+        question: string,
+        answer: string
+    },
+    index: number
+}
+
+export function AccordionItem({ item, index}: params){
     const [ open, setOpen ] = useState(false);
     const onToggle = () => {
         setOpen(!open);
@@ -14,7 +22,7 @@ export function AccordionItem({ item, index}){
                 <summary onClick={onToggle}>{item.question}{ open ? <AiOutlineUp /> : <AiOutlineDown />}              
                 </summary>
                 <p
-                    id={index + 1}
+                    key={index + 1}
                 >{item.answer}</p>
             </details>
         </div>
