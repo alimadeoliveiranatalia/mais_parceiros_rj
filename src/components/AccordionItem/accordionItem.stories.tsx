@@ -9,7 +9,8 @@ export default {
             question:"Capilaridade da Rede Senai",
             answer:"Uma parceria consolidada com uma Unidade Operacional do SENAI posibilita sua disseminação pela rede no estado, trazendo mais vantagens para as empresas parceiras."
         },
-        index: 1
+        index: 1,
+        open: false
     }
 } as Meta;
 

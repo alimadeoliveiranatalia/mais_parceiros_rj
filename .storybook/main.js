@@ -5,6 +5,7 @@
   ],
   "addons": [
     "@storybook/preset-scss",
+    "@storybook/addon-controls",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
     "@storybook/addon-interactions"
