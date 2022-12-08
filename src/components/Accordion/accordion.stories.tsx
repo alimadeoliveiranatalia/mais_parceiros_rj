@@ -2,7 +2,7 @@
 import { AccordionItem } from "../AccordionItem";
 import { Accordion } from "./";
 
-export const questionsAnswers = [ 
+const questionsAnswers = [ 
   {
     question: 'Desenvolvimento de Capital Humano',
     answer: 'As parcerias possibilitam a capacitação do capital humano interno e externo, mantendo atualizados os colaboradores e clientes das empresas parceiras envolvidos no programa.'

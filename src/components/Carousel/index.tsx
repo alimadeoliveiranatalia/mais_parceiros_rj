@@ -1,7 +1,8 @@
 ﻿import { motion } from 'framer-motion';
 import styles from './styles.module.scss';
 import { useEffect, useRef, useState } from "react";
-import { AiOutlineLeft, AiOutlineRight } from "react-icons/ai";
+import { ButtonPressLefth } from '../ButtonPressLefth';
+import { ButtonPressRight } from '../ButtonPressRight';
 
 const questionsAnswers = [
   {
@@ -37,64 +38,54 @@ const questionsAnswers = [
 
 
 export function Carousel(){
-    const carousel = useRef(null);
-    const [ widthSlider, setWidthSlider ] = useState(0);
-    
-    let boxSlider = carousel.current;
-        
-    function nextSlide(){
-      let width = boxSlider.clientWidth;
-      boxSlider.scrollLeft = boxSlider.scrollLeft + width;
-      console.log(width);
-    }
-
-    function prevSlide(){
-      let width = boxSlider.clientWidth;
-      boxSlider.scrollLeft = boxSlider.scrollLeft - width;
-      console.log(width);
-    }
-    useEffect(() => {
-        setWidthSlider(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
-    },[]);
-
-    return(
-        <div className={styles.slider}>
-          <button
-            aria-label='click para o anterior'
-            onClick={prevSlide}
-            className={styles.iconButton}
-          ><AiOutlineLeft /></button>
-            <motion.div
-              
-              ref={ carousel }
-              className={styles.carousel}
-              whileTap={{ cursor: 'grabbing'}}
-            >
-              <motion.div
-                className={styles.inner}
-                drag='x'
-                dragConstraints={{ right: 0, left: -widthSlider }}
-                initial={{ x: 100 }}
-                animate={{ x: 0 }}
-                transition={{ type: 'spring', bounce: 0.25, delay: 0.7, duration: 1}}
-                
+  const carousel = useRef(null);
+  const [ widthSlider, setWidthSlider ] = useState(0);
+  
+  let boxSlider = carousel.current;
+      
+  function nextSlide(){
+    let width = boxSlider.clientWidth;
+    boxSlider.scrollLeft = boxSlider.scrollLeft + width;
+    console.log(width);
+  }
+  function prevSlide(){
+    let width = boxSlider.clientWidth;
+    boxSlider.scrollLeft = boxSlider.scrollLeft - width;
+    console.log(width);
+  }
+  useEffect(() => {
+      setWidthSlider(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+  },[]);
+  return(
+    <div className={styles.slider}>
+      <ButtonPressLefth prevSlide={prevSlide}/>
+        <motion.div
+          
+          ref={ carousel }
+          className={styles.carousel}
+          whileTap={{ cursor: 'grabbing'}}
+        >
+          <motion.div
+            className={styles.inner}
+            drag='x'
+            dragConstraints={{ right: 0, left: -widthSlider }}
+            initial={{ x: 100 }}
+            animate={{ x: 0 }}
+            transition={{ type: 'spring', bounce: 0.25, delay: 0.7, duration: 1}}
+            
+          >
+            {questionsAnswers.map(item => (
+              <motion.div                          
+                key={item.question}
+                className={styles.item}
               >
-                {questionsAnswers.map(item => (
-                  <motion.div                          
-                    key={item.question}
-                    className={styles.item}
-                  >
-                    <div><span>{item.question}</span><p>{item.answer}</p></div>
-                  </motion.div>
-                ))}
+                <div><span>{item.question}</span><p>{item.answer}</p></div>
               </motion.div>
-              
-            </motion.div>
-            <button
-              aria-label='click para o posterior'
-              onClick={nextSlide}
-              className={styles.iconButton}
-            ><AiOutlineRight /></button>
-        </div>       
-    )
+            ))}
+          </motion.div>
+          
+        </motion.div>
+        <ButtonPressRight nextSlide={nextSlide} />
+    </div>       
+  )
 }

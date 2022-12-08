@@ -5,56 +5,36 @@ import styles from "./styles.module.scss";
 export default {
     title: "components/ButtonFlag",
     component: ButtonFlag,
-    args:{
-        block: false,
-        size: 'medium',
-        variant: 'primary',
-        disabled: false,
-        loading: false,
-        children: 'ButtonFlag'
-    },
     argTypes: {
-        block: {
-            description: 'Button will grow up to the full width of its container',
-            table: { category: 'format'}
-        },
-        children: {
-            description: 'The content of the button',
-            control: 'text',
-            table: { category: 'content'}
-        },
-        className: {
-            description: 'Specific class name to ppass down to the Button component',
-            control: 'null',
-            table: { category: 'format'}
-        },
-        disabled: {
-            description: 'Disable mode for the button',
-            table: { category: 'format'}
-        },
-        loading: {
-            description: 'Lodding mode for the button',
-            table: { category: 'format'}
-        },
-        onClick: {
-            description: 'Handle behaviour when onClick event',
-            action: 'clicked',
-            table: { category: 'events'}
-        },
-        size: {
-            description: 'Size options for the button',
-            control: {
-                type: 'inline-radio',
-                options: ['medium', 'large']
-            },
-            table: { category: 'format'}
-        }
+        backgroundColor: { control: 'color' }
     }
 } as Meta
 
 export function Default(args){
-    return (
-        
-            <ButtonFlag {...args}/>
+    return (        
+        <ButtonFlag {...args}/>
     )
 }
+export const Primary = Default.bind({});
+// More on args: https://storybook.js.org/docs/react/writing-stories/args
+Primary.args = {
+  primary: true,
+  label: 'Button',
+};
+
+export const Secondary = Default.bind({});
+Secondary.args = {
+  label: 'Button',
+};
+
+export const Large = Default.bind({});
+Large.args = {
+  size: 'large',
+  label: 'Button',
+};
+
+export const Small = Default.bind({});
+Small.args = {
+  size: 'small',
+  label: 'Button',
+};
