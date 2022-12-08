@@ -1,5 +1,4 @@
 ﻿import { AiOutlineLeft } from "react-icons/ai";
-import PropTypes from "prop-types";
 import styles from "./styles.module.scss";
 
 export interface ButtonLefthProps {
@@ -8,6 +7,8 @@ export interface ButtonLefthProps {
     color?: string;
 
     size?: 'small' | 'medium' | 'large';
+
+    index: any;
 
     label: string;
 

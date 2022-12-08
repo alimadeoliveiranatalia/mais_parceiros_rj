@@ -1,35 +1,25 @@
 ﻿import { Meta } from "@storybook/react";
-import { AiOutlineLeft } from "react-icons/ai";
-import styles from "./styles.module.scss";
-//import { ButtonPressLefth, ButtonLefthProps } from ".";
+import {useArgs} from "@storybook/client-api";
+import { ButtonPressLefth, ButtonLefthProps } from ".";
 
 export default {
     title: "components/ButtonPressLefth",
-    //component: ButtonPressLefth,
+    component: ButtonPressLefth,
     args: {
         primary: true,
         color: 'color',
         size: 'medium',
+        index: 1,
         onClick: () => {}
 
-    },
-    argTypes: {
-        color: { control: 'color'},
-        size: { control: 'radio'}
     }
-} as Meta;
+} as Meta<ButtonLefthProps>;
 
 export function Default(args){
-    function prevSlide(){}
+    const [index, setIndex] = useArgs();
     
     return (
-       <button
-            aria-label='click para o anterior'
-            onClick={prevSlide}
-            className={styles.iconButton}
-        >
-            <AiOutlineLeft />
-       </button>
+        <ButtonPressLefth {...args} />
     )
 }
 
