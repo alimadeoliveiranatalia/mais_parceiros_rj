@@ -103,7 +103,6 @@ export function MenuToggle(){
     return (
         <motion.nav
             ref={containerRef}
-            className={style.menu}
             custom={height}
             variants={navigation_variants}
         >
