@@ -1,26 +1,26 @@
 ﻿import { AiOutlineLeft } from "react-icons/ai";
-import styles from "./styles.module.scss";
+import "./styles.module.scss";
 
-export interface ButtonLefthProps {
-    primary?: boolean;
+interface ButtonLefthProps {
+    theme?:'primary' | 'secondary';
 
-    color?: string;
+    backgroundColor: string;
 
-    size?: 'small' | 'medium' | 'large';
-
-    index: any;
-
-    label: string;
-
-    onClick?: () => void;
+    prevSlide?: () => void;
 }
 
-export function ButtonPressLefth<ButtonLefthProps>({ prevSlide }){
+export function ButtonPressLefth({ 
+    prevSlide,
+    theme,
+    backgroundColor
+   }: ButtonLefthProps){
     return (
         <button
+            type='button'
             aria-label='click para o anterior'
             onClick={prevSlide}
-            className={styles.iconButton}
+            className={`iconButton storybook-iconButton--${theme}`}
+            style={{ backgroundColor}}
         >
             <AiOutlineLeft />
         </button>

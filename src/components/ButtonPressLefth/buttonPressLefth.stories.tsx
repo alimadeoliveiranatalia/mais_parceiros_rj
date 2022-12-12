@@ -1,25 +1,24 @@
-﻿import { Meta } from "@storybook/react";
-import {useArgs} from "@storybook/client-api";
-import { ButtonPressLefth, ButtonLefthProps } from ".";
+﻿import { Meta, StoryObj } from "@storybook/react";
+import { ButtonPressLefth } from ".";
 
 export default {
     title: "components/ButtonPressLefth",
     component: ButtonPressLefth,
-    args: {
-        primary: true,
-        color: 'color',
-        size: 'medium',
-        index: 1,
-        onClick: () => {}
-
+    argTypes: {
+        backgroundColor: { control: 'color'}
     }
-} as Meta<ButtonLefthProps>;
-
-export function Default(args){
-    const [index, setIndex] = useArgs();
     
+} as Meta<typeof ButtonPressLefth>;
+
+export function Default(args){    
     return (
-        <ButtonPressLefth {...args} />
+        <ButtonPressLefth {...args}/>
     )
 }
+
+export const Primary = Default.bind({});
+Primary.args = { theme: 'primary'}
+
+export const Secondary = Default.bind({});
+Secondary.args = { theme: 'secondary'}
 

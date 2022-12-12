@@ -1,4 +1,22 @@
-﻿.iconButton {
-    width: 4rem;
-    height: 4rem;
+﻿$width: 4rem;
+$height: 4rem;
+
+.iconButton {
+    width: $width;
+    height: $height;
+    color: chocolate;
+
+    &.storybook-iconButton--primary {
+
+        width: $width * 2;
+        height: $height * 2;
+        color: purple;
+    }
+
+    &.storybook-iconButton--secondary {
+        width: $width * 3;
+        height: $height *3;
+        color: red;
+    
+    }
 }
