@@ -1,15 +1,16 @@
 ﻿import { AiOutlineLeft } from "react-icons/ai";
+import { Default } from "../Carousel/carousel.stories";
 import styles from "./styles.module.scss";
 
 interface ButtonLefthProps {
 
-    backgroundColor: string;
+    backgroundColor?: string;
 
-    color: string;
+    color?: string;
 
-    width: string;
+    width?: string;
 
-    height: string;
+    height?: string;
 
     prevSlide?: () => void;
 }
