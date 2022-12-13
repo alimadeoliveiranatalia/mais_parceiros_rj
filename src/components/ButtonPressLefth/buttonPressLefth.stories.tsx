@@ -1,26 +1,20 @@
-﻿import { ComponentMeta, Meta } from "@storybook/react";
+﻿import { ComponentMeta } from "@storybook/react";
 import { ButtonPressLefth } from ".";
 
 export default {
     title: "components/ButtonPressLefth",
     component: ButtonPressLefth,
-    args: {
-        backgroundColor : 'var(--dark-blue)',
-        color:'white',
-        width:'4rem',
-        height:'4rem' 
-    },
     argTypes: {
         backgroundColor: { control: 'color'}
     }
     
-} as Meta<typeof ButtonPressLefth>;
+} as ComponentMeta<typeof ButtonPressLefth>;
 
 export function Default(args) { 
     return (
         <ButtonPressLefth {...args}/>
     )
-}
+} 
 
 export const Primary = Default.bind({});
 Primary.args = { 
