@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 export function Accordion({ questionsAnswers }){
     const renderedQuestionsAnswers = questionsAnswers.map((item: {question:string, answer:string},  index: number) => {
-        return(
+        return (
             <AccordionItem 
                 key={index}
                 item={item}

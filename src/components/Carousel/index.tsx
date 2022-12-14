@@ -48,14 +48,17 @@ export function Carousel(){
     boxSlider.scrollLeft = boxSlider.scrollLeft + width;
     console.log(width);
   }
+
   function prevSlide(){
     let width = boxSlider.clientWidth;
     boxSlider.scrollLeft = boxSlider.scrollLeft - width;
     console.log(width);
   }
+  
   useEffect(() => {
-      setWidthSlider(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
+    setWidthSlider(carousel.current?.scrollWidth - carousel.current?.offsetWidth);
   },[]);
+
   return(
     <div className={styles.slider}>
       <ButtonPressLefth prevSlide={prevSlide}/>

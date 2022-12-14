@@ -19,7 +19,9 @@ export function AccordionItem({ item, index}: params){
     return (
         <div className={styles.accordionItem} key={item.question}>
             <details>
-                <summary onClick={onToggle}>{item.question}{ open ? <AiOutlineUp /> : <AiOutlineDown />}              
+                <summary onClick={onToggle}>
+                    {item.question}
+                    { open ? <AiOutlineUp /> : <AiOutlineDown />}              
                 </summary>
                 <p
                     key={index + 1}
