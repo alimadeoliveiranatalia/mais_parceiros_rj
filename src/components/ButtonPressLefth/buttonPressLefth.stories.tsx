@@ -5,7 +5,8 @@ export default {
     title: "components/ButtonPressLefth",
     component: ButtonPressLefth,
     argTypes: {
-        backgroundColor: { control: 'color'}
+        backgroundColor: { control: 'color'},
+        prevSlide: { action: 'clicked'}
     }
     
 } as ComponentMeta<typeof ButtonPressLefth>;

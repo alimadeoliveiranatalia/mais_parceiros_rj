@@ -12,7 +12,7 @@ interface ButtonLefthProps {
 
     height?: string;
 
-    prevSlide?: () => void;
+    prevSlide: () => void;
 }
 
 export function ButtonPressLefth({ 
