@@ -13,9 +13,11 @@ interface params {
 
 export function AccordionItem({ item, index}: params){
     const [ open, setOpen ] = useState(false);
+
     const onToggle = () => {
         setOpen(!open);
     }
+    
     return (
         <div className={styles.accordionItem} key={item.question}>
             <details>
