@@ -1,0 +1,22 @@
+﻿.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 86px;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+    background: #FFFFFF;
+    .icon {
+        width: 40px;
+        height: 40px;
+    }
+    p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 35px;
+    }
+}
