@@ -1,24 +1,30 @@
-﻿import { RiPlantFill } from "react-icons/ri"
-import { getParceirosProps } from "../../utils/getParceirosProps";
+﻿import { useState } from "react";
+import { RiPlantFill } from "react-icons/ri";
+import { ContentModal } from "../ContentModal";
 
 import styles from "./styles.module.scss";
 
-export function CardAtuacao({ list_parceiros }){
-    //const list = list_parceiros.agronegocio.map((item) => (<p>{item.empresa}</p>))
+export function CardAtuacao({title}){
+    const [ dropDown, setDropDown ] = useState(false);
+    
+    function showDropDown(){
+        setDropDown(true);
+    }
+
+    function closeModal(){
+        setDropDown(false);
+    }
+    
     return (
-        <div className={styles.card}>
-            <RiPlantFill className={styles.icon}/>
-            <p>Agronegocio</p>
-        </div>
+        <>
+            <button className={styles.card} onClick={showDropDown}>
+                <RiPlantFill className={styles.icon}/>
+                <p>{title}</p>
+            </button>
+            <ContentModal props={{'display' : 'none'}} empresa={}/>
+        </>
     )
 }
 
-export async function getStaticProps(){
-    const list_parceiros = await getParceirosProps();
-
-    return {
-        props: { list_parceiros }
-    }
-}
 
 

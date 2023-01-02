@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.scss';
 import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
+import { CardListEmpresas } from '../src/components/CardListEmpresas';
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
             <br />
             <h2>EMPRESAS QUE JÁ FAZEM PARTE</h2>
             <p>Confira a lista de empresas que já são parceiros:</p>
+            <CardListEmpresas />
           </section>
           <section className={styles.sectionContainer}>
             <br />
@@ -65,3 +67,4 @@ export default function Home() {
     </>
   )
 }
+

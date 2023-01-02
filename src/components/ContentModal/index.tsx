@@ -2,9 +2,10 @@
 import logo from "../../../public/icons_parceiros/john_deere.svg";
 import styles from "./styles.module.scss";
 
-export function ContentModal({ icon, empresa, escola }){
+export function ContentModal({ props, icon, empresa, escola }){
+    const { modalRef } = props;
     return (
-        <table className={styles.table}>
+        <table ref={modalRef} className={styles.table}>
             <tr>
                 <th></th>
                 <th style={{'textAlign': 'left'}}>Empresa</th>
