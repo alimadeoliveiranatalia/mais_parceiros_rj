@@ -1,24 +1,33 @@
 ﻿import { CardAtuacao } from "../CardAtuacao";
-import { area_atuacao } from "../../../public/area_atuacao";
+import plant from "../../../public/images/icons_parceiros/icon-park-solid_pure-natural.svg";
+import fork from "../../../public/images/icons_parceiros/fluent_food-16-filled.svg";
+import association from "../../../public/images/icons_parceiros/icon-park_association.svg";
+import auto_industry from "../../../public/images/icons_parceiros/carbon_ibm-cloud-pak-network-automation.svg";
+import automotiva from "../../../public/images/icons_parceiros/bxs_car-mechanic.svg";
+import ceramica from "../../../public/images/icons_parceiros/game-icons_porcelain-vase.svg";
+import ti from "../../../public/images/icons_parceiros/mdi_desktop-classic.svg";
+import grafica from "../../../public/images/icons_parceiros/el_file-edit.svg";
+import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce-management.svg";
+
 import styles from "./styles.module.scss";
 
 export function CardListEmpresas(){
     return (
         <div className={styles.card}>
             <div>
-                <CardAtuacao title={'Agronegócio'} />
-                <CardAtuacao title={'Alimentos e Bebidas'} />
-                <CardAtuacao title={'Associações e Entidades'} />
+                <CardAtuacao title={'Agronegócio'} src={plant}/>
+                <CardAtuacao title={'Alimentos e Bebidas'} src={fork}/>
+                <CardAtuacao title={'Associações e Entidades'} src={association}/>
             </div>
             <div>
-                <CardAtuacao title={'Automação Industrial'} />
-                <CardAtuacao title={'Automotiva'} />
-                <CardAtuacao title={'Cerâmica'} />
+                <CardAtuacao title={'Automação Industrial'} src={auto_industry}/>
+                <CardAtuacao title={'Automotiva'} src={automotiva}/>
+                <CardAtuacao title={'Cerâmica'} src={ceramica}/>
             </div>
             <div>
-                <CardAtuacao title={'Construção Civil'} />
-                <CardAtuacao title={'Gráfica e Editorial'} />
-                <CardAtuacao title={'Equipamentos Biomédicos'} />
+                <CardAtuacao title={'Tecnologia da Informação'} src={ti}/>
+                <CardAtuacao title={'Gráfica e Editorial'} src={grafica}/>
+                <CardAtuacao title={'Equipamentos Biomédicos'} src={gestor}/>
             </div>
         </div>
     )
