@@ -1,4 +1,8 @@
-﻿.card {
+﻿.container {
+    display: inline-block;
+    //flex-direction: column-reverse;
+}
+.card {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -19,7 +23,7 @@
         line-height: 35px;
     }
     &:hover {
-        border-bottom: 0.25rem outset gray;
-        border-right: 0.25rem outset gray;
+        border-bottom: 0.25rem outset var(--gray-500);
+        border-right: 0.25rem outset var(--gray-500);
     }
 }
