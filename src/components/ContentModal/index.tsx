@@ -2,10 +2,9 @@
 import logo from "../../../public/icons_parceiros/john_deere.svg";
 import styles from "./styles.module.scss";
 
-export function ContentModal({ props, icon, empresa, escola }){
-    const { modalRef } = props;
+export function ContentModal({ empresa, escola }){
     return (
-        <table ref={modalRef} className={styles.table}>
+        <table className={styles.table}>
             <tr>
                 <th></th>
                 <th style={{'textAlign': 'left'}}>Empresa</th>
@@ -17,7 +16,7 @@ export function ContentModal({ props, icon, empresa, escola }){
                 <td>602 - Escola Senai - Ribeirão Preto - Eng. </td>
             </tr>
             <tr>
-                <td>{icon}</td>
+                <td></td>
                 <td>{empresa}</td>
                 <td>{escola}</td>
             </tr>
