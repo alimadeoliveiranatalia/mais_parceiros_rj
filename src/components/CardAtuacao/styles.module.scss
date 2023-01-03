@@ -10,15 +10,16 @@
     border-radius: 0.625rem;
     background-color: #FFFFFF;
     border: none;
-    transition: color 0.2s;
-    &:hover {
-        color: var(--gray-300);
-    }
-    
+    transition: border 0.2s;
+   
     p {
         font-style: normal;
         font-weight: 700;
         font-size: 18px;
         line-height: 35px;
+    }
+    &:hover {
+        border-bottom: 0.25rem outset gray;
+        border-right: 0.25rem outset gray;
     }
 }
