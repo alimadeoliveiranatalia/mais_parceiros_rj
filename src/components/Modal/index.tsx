@@ -3,9 +3,9 @@ import { parceiros } from "../../../public/parceiros";
 
 import styles from "./styles.module.scss";
 
-export function Modal(){
+export function Modal({ setIsOpen }){
     return (
-        <div className={styles.modalStyle}>
+        <div className={styles.modalStyle} onClick={() => setIsOpen(false)}>
             <ContentModal area={'Agronegócio'} empresa={'Samsung'} escola={'Senai - Anchieta'} />
             {/*
                 parceiros.map(
