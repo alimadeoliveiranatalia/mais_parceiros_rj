@@ -1,5 +1,19 @@
-﻿.table {
-    position: absolute;
+﻿.headermodal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+    border-radius: 25px 25px 0 0;
+    width: 1200px;
+    height: 100px;
+    background: #D9D9D9;
+    .iconClose {
+        width: 48px;
+        height: 48px;
+    }
+}
+.table {
     width: 1200px;
     height:78px;
     padding: 2rem;
