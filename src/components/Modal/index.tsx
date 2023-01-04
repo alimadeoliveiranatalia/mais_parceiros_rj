@@ -6,7 +6,8 @@ import styles from "./styles.module.scss";
 export function Modal(){
     return (
         <div className={styles.modalStyle}>
-            {
+            <ContentModal area={'Agronegócio'} empresa={'Samsung'} escola={'Senai - Anchieta'} />
+            {/*
                 parceiros.map(
                     (item) => {
                         return (
@@ -16,7 +17,7 @@ export function Modal(){
                         )
                     }
                 )
-            }
+            */}
         </div>
     )
 }
