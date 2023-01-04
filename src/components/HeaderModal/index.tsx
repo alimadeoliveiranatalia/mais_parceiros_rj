@@ -1,10 +1,10 @@
 ﻿import { AiFillCloseCircle } from "react-icons/ai";
 import styles from "./styles.module.scss";
 
-export function HeaderModal(){
+export function HeaderModal({area}){
     return (
         <div className={styles.headermodal}>
-            <p>Agronegocio</p>
+            <p>{area}</p>
             <AiFillCloseCircle className={styles.iconClose}/>
         </div>
     )

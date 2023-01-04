@@ -10,6 +10,7 @@ import grafica from "../../../public/images/icons_parceiros/el_file-edit.svg";
 import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce-management.svg";
 
 import styles from "./styles.module.scss";
+import { Modal } from "../Modal";
 
 export function CardListEmpresas(){
     return (

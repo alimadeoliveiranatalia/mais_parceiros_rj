@@ -2,11 +2,17 @@
 import { Modal } from ".";
 import { ContentModal } from "../ContentModal";
 import { HeaderModal } from "../HeaderModal";
+import { parceiros } from "../../../public/parceiros";
 
 export default {
     component: Modal,
     subcomponents: { HeaderModal, ContentModal },
-    title: 'components/Modal'
+    title: 'components/Modal',
+    args: {
+        parceiros: parceiros
+    }
 } as Meta;
 
-export const Default: StoryObj = {}
+export function Default(args){
+    return ( <Modal {...args} />)
+}
