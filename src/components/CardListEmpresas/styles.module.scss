@@ -3,11 +3,13 @@
  background: #d9d9d9;
  border-radius: 2.5rem;
  padding: 2rem;
+ display: flex;
+ //flex-direction: row;
  div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin: 2rem;
+    align-items: center;
+    //margin: 2rem;
  }
 }
