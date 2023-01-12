@@ -2,6 +2,7 @@
 import styles from "./styles.module.scss";
 import Image from "next/image";
 import { Modal } from "../Modal";
+import { ContentModal } from "../ContentModal";
 
 export function CardAtuacao({title, src}){
     const [isOpen, setIsOpen] = useState(false);
@@ -13,7 +14,10 @@ export function CardAtuacao({title, src}){
                     <p>{title}</p>
                 </button>
             </div>
-            { isOpen && <Modal setIsOpen={setIsOpen} />}
+            { isOpen && <Modal setIsOpen={setIsOpen} >
+                    <ContentModal area={'Agronegócio'} empresa={'Samsung'} escola={'Senai - Anchieta'} />
+                </Modal>
+            }
         </>        
     )
 }
