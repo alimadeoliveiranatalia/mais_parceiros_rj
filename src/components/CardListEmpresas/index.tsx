@@ -15,7 +15,7 @@ export function CardListEmpresas(){
 
     return (
         <div className={styles.card}>
-            <div>
+            <div className={styles.subCard}>
                 <CardAtuacao title={'Agronegócio'} src={plant}/>
                 <CardAtuacao title={'Alimentos e Bebidas'} src={fork}/>
                 <CardAtuacao title={'Associações e Entidades'} src={association}/>

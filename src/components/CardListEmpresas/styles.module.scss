@@ -4,12 +4,12 @@
  border-radius: 2.5rem;
  padding: 2rem;
  display: flex;
- //flex-direction: row;
- div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    //margin: 2rem;
- }
+ margin: 1rem;
+ flex-direction: row;
+}
+.subCard {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }

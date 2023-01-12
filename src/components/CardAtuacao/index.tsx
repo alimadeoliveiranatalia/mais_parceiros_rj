@@ -14,7 +14,8 @@ export function CardAtuacao({title, src}){
                     <p>{title}</p>
                 </button>
             </div>
-            { isOpen && <Modal setIsOpen={setIsOpen} >
+            { isOpen && 
+                <Modal setIsOpen={setIsOpen} >
                     <ContentModal area={'Agronegócio'} empresa={'Samsung'} escola={'Senai - Anchieta'} />
                 </Modal>
             }
