@@ -1,12 +1,11 @@
-﻿import { ContentModal } from "../ContentModal";
-import { parceiros } from "../../../public/parceiros";
+﻿import { parceiros } from "../../../public/parceiros";
 
 import styles from "./styles.module.scss";
 
 export function Modal({ setIsOpen, children }){
     return (
         <div className={styles.modalStyle} onClick={() => setIsOpen(false)}>
-            {children}
+            <div className={styles.renderContent}>{children}</div>
             {/*
                 parceiros.map(
                     (item) => {

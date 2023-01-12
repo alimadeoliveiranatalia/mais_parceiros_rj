@@ -4,7 +4,6 @@
  border-radius: 2.5rem;
  padding: 2rem;
  display: flex;
- margin: 1rem;
  flex-direction: row;
 }
 .subCard {
@@ -12,4 +11,5 @@
    flex-direction: column;
    justify-content: center;
    align-items: center;
+   margin: 1rem;
 }
