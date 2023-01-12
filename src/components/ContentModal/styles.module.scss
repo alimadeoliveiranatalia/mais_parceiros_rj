@@ -1,9 +1,8 @@
 ﻿.container{
-    position: fixed;
+    position: relative;
     
 }
 .headermodal{
-    position: fixed;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -24,7 +23,6 @@
     }
 }
 .table {
-    position: fixed;
     width: 1200px;
     height:78px;
     padding: 2rem;
