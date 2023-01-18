@@ -10,18 +10,19 @@ import grafica from "../../../public/images/icons_parceiros/el_file-edit.svg";
 import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce-management.svg";
 
 import styles from "./styles.module.scss";
+import { ModalRadixUI } from "../ModalRadixUI";
 
 export function CardListEmpresas(){
 
     return (
         <div className={styles.card}>
             <div className={styles.subCard}>
-                <CardAtuacao title={'Agronegócio'} src={plant}/>
+                <ModalRadixUI title={'Agronegócio'} src={plant}/>
                 <CardAtuacao title={'Alimentos e Bebidas'} src={fork}/>
                 <CardAtuacao title={'Associações e Entidades'} src={association}/>
             </div>
             <div className={styles.subCard}>
-                <CardAtuacao title={'Automação Industrial'} src={auto_industry}/>
+                <ModalRadixUI title={'Automação Industrial'} src={auto_industry}/>
                 <CardAtuacao title={'Automotiva'} src={automotiva}/>
                 <CardAtuacao title={'Cerâmica'} src={ceramica}/>
             </div>

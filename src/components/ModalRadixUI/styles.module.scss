@@ -1,0 +1,43 @@
+﻿.container{
+    display: block;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 15.625rem;
+    height: 5.375rem;
+    padding: 1.725rem;
+    margin: 1.5rem;
+    border-radius: 0.625rem;
+    background-color: #FFFFFF;
+    border: none;
+    transition: border 0.2s;
+    p {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 35px;
+    }
+    &:hover {
+        border-bottom: 0.25rem outset var(--gray-500);
+        border-right: 0.25rem outset var(--gray-500);
+    }
+    
+}
+.modalStyle {
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.2);
+    inset: 0;
+    /*width: 100vw;
+    height: 100vh;
+    top: 1100px;
+    left: 0;*/
+}
+.renderContent {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
