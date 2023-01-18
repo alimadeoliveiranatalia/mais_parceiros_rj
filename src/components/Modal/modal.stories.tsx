@@ -10,8 +10,12 @@ export default {
     args: {
         parceiros: parceiros
     }
-} as Meta;
+} as Meta
 
 export function Default(args){
-    return ( <Modal {...args} />)
+    return ( 
+        <Modal {...args} >
+            <ContentModal area="Mecânica e Metalúrgica" empresa="EST | LTDA" escola="Senai Anchieta" key={1}/>
+        </Modal>
+    )
 }

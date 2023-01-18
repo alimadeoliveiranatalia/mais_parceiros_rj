@@ -5,8 +5,11 @@
     height: 100vh;
     top: 1100px;
     left: 0;
+    z-index: 10;
+    
 }
 .renderContent {
+    position: relative;
     display: flex;
     justify-content: center;
     margin-top: 15rem;
