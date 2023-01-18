@@ -18,18 +18,18 @@ export function CardListEmpresas(){
         <div className={styles.card}>
             <div className={styles.subCard}>
                 <ModalRadixUI title={'Agronegócio'} src={plant}/>
-                <CardAtuacao title={'Alimentos e Bebidas'} src={fork}/>
-                <CardAtuacao title={'Associações e Entidades'} src={association}/>
+                <ModalRadixUI title={'Alimentos e Bebidas'} src={fork}/>
+                <ModalRadixUI title={'Associações e Entidades'} src={association}/>
             </div>
             <div className={styles.subCard}>
                 <ModalRadixUI title={'Automação Industrial'} src={auto_industry}/>
-                <CardAtuacao title={'Automotiva'} src={automotiva}/>
-                <CardAtuacao title={'Cerâmica'} src={ceramica}/>
+                <ModalRadixUI title={'Automotiva'} src={automotiva}/>
+                <ModalRadixUI title={'Cerâmica'} src={ceramica}/>
             </div>
             <div className={styles.subCard}>
-                <CardAtuacao title={'Tecnologia da Informação'} src={ti}/>
-                <CardAtuacao title={'Gráfica e Editorial'} src={grafica}/>
-                <CardAtuacao title={'Equipamentos Biomédicos'} src={gestor}/>
+                <ModalRadixUI title={'Tecnologia da Informação'} src={ti}/>
+                <ModalRadixUI title={'Gráfica e Editorial'} src={grafica}/>
+                <ModalRadixUI title={'Equipamentos Biomédicos'} src={gestor}/>
             </div>
         </div>
     )

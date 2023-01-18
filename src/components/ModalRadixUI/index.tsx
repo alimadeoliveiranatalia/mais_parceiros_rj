@@ -18,7 +18,7 @@ export function ModalRadixUI({title, src}){
             <Dialog.Portal>
                 <Dialog.Overlay className={style.modalStyle}>
                     <Dialog.Content className={style.renderContent}>
-                        <ContentModal area={title} empresa={'Nokia'} escola={'Senai - Instituto Anchieta'}/>
+                        <ContentModal area={title} empresa={'Nokia'} escola={'Senai - Instituto Anchieta'} />
                     </Dialog.Content>
                 </Dialog.Overlay>
             </Dialog.Portal>
