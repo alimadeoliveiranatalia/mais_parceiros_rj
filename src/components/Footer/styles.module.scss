@@ -35,3 +35,8 @@
     text-align: center;
     background-color: var(--blue);
 }
+@media(max-width: 450px){
+    .footerContent{
+        justify-content: center;
+    }
+}
