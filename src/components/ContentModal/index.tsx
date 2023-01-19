@@ -1,15 +1,13 @@
 ﻿import Image from "next/image";
-import { AiFillCloseCircle } from "react-icons/ai";
 import logo from "../../../public/icons_parceiros/john_deere.svg";
 import styles from "./styles.module.scss";
 
 export interface ModalProps{
-    area: string;
     empresa: string;
     escola: string;
 }
 
-export function ContentModal({ area, empresa, escola }: ModalProps){
+export function ContentModal({ empresa, escola }: ModalProps){
     
     return (
             <div>
