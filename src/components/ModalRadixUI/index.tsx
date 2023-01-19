@@ -9,11 +9,9 @@ export function ModalRadixUI({title, src}){
     const [isOpen, setIsOpen] = useState(false);
     return (
         <Dialog.Root defaultOpen open={isOpen} onOpenChange={setIsOpen} modal>
-            <Dialog.Trigger>
-                <button className={style.card} onClick={() => setIsOpen(true)}>
-                    <Image src={src} alt='image' width={40} height={40}/>
-                    <p>{title}</p>
-                </button>
+            <Dialog.Trigger className={style.card} onClick={() => setIsOpen(true)}>
+                <Image src={src} alt='image' width={40} height={40}/>
+                <p>{title}</p>
             </Dialog.Trigger>
             <Dialog.Portal>
                 <Dialog.Overlay className={style.modalStyle}>
