@@ -19,3 +19,8 @@
    align-items: center;
    margin: 1rem;
 }
+@media(max-width: 560px){
+   .card{
+      flex-direction: column;
+   }
+}
