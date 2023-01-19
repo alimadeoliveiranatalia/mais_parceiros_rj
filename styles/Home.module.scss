@@ -43,7 +43,15 @@
     }
   }
 }
+
 .title {
   display: flex;
   justify-content: space-between;
+}
+@media(max-width: 450px){
+  .sectionContainer{
+    p {
+      text-align: justify;
+    }
+  }
 }

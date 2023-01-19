@@ -14,7 +14,7 @@ const links = [
     {
         'aria_label':'Formulário de Participação',
         'href':'#seja_parceiro',
-        'description': 'SAIBA COMO FAZER PARTE'
+        'description': 'SAIBA COMO SE TORNAR UM PARCEIRO'
     }
 ]
 
