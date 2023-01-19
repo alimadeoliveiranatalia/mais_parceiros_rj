@@ -10,12 +10,8 @@ export interface ModalProps{
 }
 
 export function ContentModal({ area, empresa, escola }: ModalProps){
+    
     return (
-        <div className={styles.container}>
-            <div className={styles.headermodal}>
-                <span>{area}</span>
-                <AiFillCloseCircle className={styles.iconClose}/>
-            </div>
             <div>
                 <table className={styles.table}>
                     <thead>
@@ -36,6 +32,6 @@ export function ContentModal({ area, empresa, escola }: ModalProps){
                     </tbody>
                 </table>
             </div>
-        </div>
+        
     )
 }
