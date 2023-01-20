@@ -55,3 +55,10 @@
     position: relative;
     
 }
+@media(max-width: 450px){
+    .item {
+        text-align: center;
+        div {margin: 1.5rem};
+        p {margin-top: 1rem};
+    }
+}
