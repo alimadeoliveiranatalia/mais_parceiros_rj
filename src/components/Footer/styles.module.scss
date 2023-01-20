@@ -35,8 +35,17 @@
     text-align: center;
     background-color: var(--blue);
 }
+.icon{
+    width: 2rem;
+    height: 1.5rem;
+    color: #FFFF;
+}
 @media(max-width: 450px){
     .footerContent{
+        padding: 1rem;
         justify-content: center;
+        p{
+            text-align: center;
+        }
     }
 }

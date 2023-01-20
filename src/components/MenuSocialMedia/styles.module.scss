@@ -22,3 +22,10 @@ $color-gray-hover: var(--gray-300);
         display: none;
     }
 }
+@media(max-width:450px){
+    .navConteiner{
+        display: flex;
+        color: #FFFF;
+    }
+    
+}
