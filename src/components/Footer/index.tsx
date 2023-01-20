@@ -6,6 +6,7 @@ export function Footer(){
     return(
         <footer role='contentinfo' className={styles.footerConteiner}>
             <div className={styles.footerContent}>
+                <MenuSocialMedia/>
                 <div>
                     <ImLocation2 className={styles.icon}/>
                     <span>                        
