@@ -31,7 +31,7 @@
         pointer-events: none;
         background-color: #DBD7D7;
         padding: 1rem;
-        margin: 1rem;
+        //margin: 1rem;
         span {
             width: 20rem;
             height: 1.75rem;
@@ -56,9 +56,19 @@
     
 }
 @media(max-width: 450px){
-    .item {
-        text-align: center;
-        div {margin: 1.5rem};
+    .slider{
+        margin-right: 1rem;
+        margin-left: 1rem;
+    }
+    .carousel{
+        overflow: auto;
+    }
+    .inner {
+        text-align: center;    
+        .item{
+            min-width: 22rem;
+            padding: 0.70rem;
+        }
         p {margin-top: 1rem};
     }
 }

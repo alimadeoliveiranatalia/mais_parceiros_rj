@@ -74,7 +74,7 @@ export function Carousel(){
             dragConstraints={{ right: 0, left: -widthSlider }}
             initial={{ x: 100 }}
             animate={{ x: 0 }}
-            transition={{ type: 'spring', bounce: 0.25, delay: 0.7, duration: 1}}
+            transition={{ type: 'spring', bounce: 0.2, delay: 0.7, duration: 1}}
             
           >
             {questionsAnswers.map(item => (
