@@ -1,14 +1,18 @@
 ﻿.footerConteiner {
-    height: 10rem;
+    //height: 10rem;
     border-top: 1px solid var(--gray-300);
     background-color: var(--blue);
+    display: flex;
+    flex-direction: column;
 }
 .footerContent {
-    max-width: 1120px;
-    padding: 3rem 0 0 2rem;
-    margin: 0 auto;
+    //max-width: 1120px;
+    //padding: 3rem 0 0 2rem;
+    padding: 2rem;
+    //margin: 0 auto;
     display: flex;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
+    flex-direction: row;
     align-items: center; 
     justify-content: space-between;
     div {
@@ -18,12 +22,14 @@
             font-weight: bold;
             color: var(--white);
             transition: color 0.2s;
+            margin-bottom: 0.5rem;
             
             &:hover {
                 color: var(--gray-300);
             }
         }
         p {
+            margin: 0.5rem, 0 ,0.5rem, 0 ;
             color: var(--white);
             padding: 0 1rem 0;
         }
@@ -42,6 +48,7 @@
 }
 @media(max-width: 450px){
     .footerContent{
+        flex-direction: column;
         padding: 1rem;
         justify-content: center;
         p{

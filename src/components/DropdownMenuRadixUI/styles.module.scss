@@ -1,34 +1,41 @@
 ﻿.toggle_button {
-    display: block;
-    position: absolute;
-    margin-left: 255px;
+    //display: block;
+    //position: absolute;
+    margin-left: 325px;
     width: 50px;
     max-width: 50px;
     height: 50px;
     border: none;
     border-radius: 50%;
-    background: var(--blue);
+    background: var(--blue-100);
     color: white;
 }
 .navConteiner {
-    padding: 0 2rem;
-    display: flex;
-    align-items: center;
-    border-color: blue;
+    //position: absolute; 
+    //padding: 1.5rem;
+    display: inline-block;
+    //flex-direction: row;
+    //align-items: center;
+    border: 3px solid purple;
+    background: var(--blue-100);
+    border-radius: 1rem;
+    
 
     a {
-        display: inline-block;
-        color: purple;
-        position: relative;
-        padding: 0 0.5rem;
+        //border-radius: 50%;
+        background: var(--blue-100);
+        color: #FFFF;
+        margin: 0.5rem;
+        //position: relative;
+        padding: 0.5rem;
         transition: color 0.2s;
 
         &:hover {
-            color: orange;
+            color: var(--gray-500);
         }
     }
 }
 .icon{
-    width: 2rem;
-    height: 2rem;
+    width: 1.5rem;
+    height: 1.5rem;
 }

@@ -6,17 +6,18 @@ import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
 import { CardListEmpresas } from '../src/components/CardListEmpresas';
+import { DropdownMenuRadixUI } from '../src/components/DropdownMenuRadixUI';
 
 export default function Home() {
   return (
     <>
       <Head><title>Senai + Parceiros</title></Head>
         <main>
-          <section  className={styles.sectionContainer}>
+          <section id="home" className={styles.sectionContainer}>
             <br />
             <div className={styles.title}>
               <h1>Mais Parceiros</h1>
-              <MenuSocialMedia />
+              <MenuSocialMedia/>
             </div>
             <br />
             <h2>SOBRE O MAIS PARCEIROS</h2>
