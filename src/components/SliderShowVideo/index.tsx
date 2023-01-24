@@ -78,7 +78,7 @@ export function SliderShowVideo(){
         setIndex(index-1);
     }
     return (          
-        <div className={styles.slider_video}>           
+        <>           
             <div className={styles.slider}>
                 <AnimatePresence initial={false} custom={direction}>
                     <motion.iframe
@@ -93,14 +93,16 @@ export function SliderShowVideo(){
                         frameBorder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
-                    />
-                    <span>{linkVideo[index].company}</span> 
+                    />                     
                 </AnimatePresence>            
             </div>
             <div className={styles.contentButton}>
-                <button aria-label='click para o vídeo anterior' className={styles.iconPrevButton} onClick={prevVideo}><AiOutlineLeft /></button>            
+                <button aria-label='click para o vídeo anterior' className={styles.iconPrevButton} onClick={prevVideo}><AiOutlineLeft /></button>
+                <div>
+                    <span>{linkVideo[index].company}</span>
+                </div>            
                 <button aria-label='click para o vídeo posterior' className={styles.iconNextButton} onClick={nextVideo}><AiOutlineRight  /></button>
             </div>
-        </div>
+        </>
     )
 }
