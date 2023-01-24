@@ -1,30 +1,10 @@
-﻿.container{
-    position: relative;
-    
-}
-.headermodal{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 2rem;
-    border-radius: 25px 25px 0 0;
+﻿.container_table{
     width: 1200px;
-    height: 100px;
-    background: #D9D9D9;
-    span {
-        text-transform: uppercase;
-        font-weight: 800;
-        font-size: 2rem;
-    }
-    .iconClose {
-        width: 48px;
-        height: 48px;
-    }
+    height: 10rem;
 }
 .table {
     width: 1200px;
-    height:78px;
+    height: 78px;
     padding: 2rem;
     background: #FFFFFF;
     border-radius: 0 0 25px 25px;
