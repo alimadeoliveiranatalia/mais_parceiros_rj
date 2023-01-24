@@ -5,6 +5,8 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { ContentModal } from "../ContentModal";
 import style from "./styles.module.scss";
 
+
+
 export function ModalRadixUI({title, src, empresa, escola}){
     const [isOpen, setIsOpen] = useState(false);
     return (

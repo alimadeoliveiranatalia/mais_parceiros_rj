@@ -67,5 +67,55 @@
         "escola_responsavel":"GIS - Gerência de Infraestrutura e Suprimentos"
     }
       
+];
+export const parceiros_two = [
+    {
+        "agronegocio": [
+            {
+                "id": 1,
+                "area": "Agronegócio",
+                "empresa":"John Deere do Brasil",
+                "escola_responsavel":"602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes"
+            },
+            {
+                "id": 1,
+                "area": "Agronegócio",
+                "empresa":"John Deere do Brasil",
+                "escola_responsavel":"602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes"
+            }
+        ]
+    },
+    {
+        "alimentos": [
+            {
+                "id": 2,
+                "area": "Alimantos e Bebidas",
+                "empresa":"Finamac Engenharia e Industrialização de Equipamentos",
+                "escola_responsavel":"105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira"
+            },
+            {
+                "id": 2,
+                "area": "Alimantos e Bebidas",
+                "empresa":"Finamac Engenharia e Industrialização de Equipamentos",
+                "escola_responsavel":"105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira"
+            }
+        ]
+    },
+    {
+        "associacoes": [
+            {
+                "id": 3,
+                "area": "Associações e Entidades",
+                "empresa":"Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL",
+                "escola_responsavel":"124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho"
+            },
+            {
+                "id": 3,
+                "area": "Associações e Entidades",
+                "empresa":"Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL",
+                "escola_responsavel":"124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho"
+            }
+        ]
+    }
 ]
 

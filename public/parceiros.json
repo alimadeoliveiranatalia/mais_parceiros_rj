@@ -1,0 +1,28 @@
+﻿{    
+    "Agronegócio" : [
+        { 
+            "empresa":  "John Deere do Brasil",
+            "escola_responsavel": "602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes"
+        },
+        { 
+            "empresa":  "John Deere do Brasil",
+            "escola_responsavel": "602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes"
+        }
+    ],
+    "Alimantos e Bebidas": [
+        {
+            "empresa": "Finamac Engenharia e Industrialização de Equipamentos",
+            "escola_responsavel": "105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira"
+        },
+        {
+            "empresa": "Finamac Engenharia e Industrialização de Equipamentos",
+            "escola_responsavel": "105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira"
+        }
+    ],
+    "Associações e Entidades" : [
+        {
+            "empresa": "Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL",
+            "escola_responsavel": "124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho"
+        }
+    ]
+}

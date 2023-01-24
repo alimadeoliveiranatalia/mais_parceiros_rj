@@ -12,9 +12,10 @@ import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce
 import styles from "./styles.module.scss";
 import { ModalRadixUI } from "../ModalRadixUI";
 import { parceiros } from "../../../public/parceiros";
-import { ContentModal } from "../ContentModal";
+import list from "../../../public/parceiros.json";
 
-/*const list_parceiros = parceiros.map((item) => {
+
+const list_parceiros = parceiros.map((item) => {
     return (
         <div className={styles.subModalRadix}>
             <ModalRadixUI
@@ -25,30 +26,37 @@ import { ContentModal } from "../ContentModal";
             />
         </div>    
     )
-});*/
-
+});
+const parceiros_json = list.Agronegócio.map(item => {
+    <ModalRadixUI
+        title={list.Agronegócio}
+        src={plant}
+        empresa={item.empresa}
+        escola={item.escola_responsavel}
+    />
+});
 export function CardListEmpresas(){
 
     return (
         <div className={styles.card}>
             <div className={styles.subCard}>
-                <ModalRadixUI
+                {/*<ModalRadixUI
                     title={'Agronegócio'}
                     src={plant}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    empresa={'John Deere do Brasil'}
+                    escola={'602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes'}
                 />
                 <ModalRadixUI
                     title={'Alimentos'}
                     src={fork}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    empresa={'Finamac Engenharia e Industrialização de Equipamentos'}
+                    escola={'105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira'}
                 />
                 <ModalRadixUI
                     title={'Associações'}
                     src={association}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    empresa={'Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL'}
+                    escola={'124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho'}
                 />
             </div>
             <div className={styles.subCard}>
@@ -89,8 +97,9 @@ export function CardListEmpresas(){
                     src={gestor}
                     empresa={'nokia'}
                     escola={'senai'}
-                />
-            </div>            
+                />*/}
+                {list_parceiros}
+            </div>                    
         </div>
     )
 }

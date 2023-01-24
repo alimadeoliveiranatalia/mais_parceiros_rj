@@ -59,9 +59,10 @@
         height: 48px;
     }
 }
-@media(max-width: 900px){
+@media(max-width: 1000px){
     .renderContent {
-        overflow-x: scroll; 
+        overflow-x: scroll;
+        overflow-y: auto; 
         align-items: flex-start;
     }
 }
