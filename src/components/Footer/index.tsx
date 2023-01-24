@@ -1,5 +1,4 @@
 ﻿import {ImLocation2, ImPhone} from 'react-icons/im';
-import { MenuSocialMedia } from '../MenuSocialMedia';
 import { MenuSocialMediaFooter } from '../MenuSocialMediaFooter';
 import styles from './styles.module.scss';
 
@@ -7,23 +6,27 @@ export function Footer(){
     return(
         <footer role='contentinfo' className={styles.footerConteiner}>
             <div className={styles.footerContent}>
-                <div>
+                <div className={styles.item}>
                     <ImLocation2 className={styles.icon}/>
-                    <span>                        
-                        Rua de Pedestre SE
-                    </span>
-                    <p>Av. Paulista</p>
+                    <div>
+                        <span>                        
+                            Rua de Pedestre SE
+                        </span>
+                        <p>Av. Paulista</p>
+                    </div>
                 </div>
-                <div>
+                <div className={styles.item}>
                     <ImPhone className={styles.icon}/>
-                    <span>
-                        Central de Atendimento
-                    </span>
-                    <p>(11)088-055-1000</p>
+                    <div>
+                        <span>
+                            Central de Atendimento
+                        </span>
+                        <p>(00)000-00-0000</p>
+                    </div>
                 </div>
-                <div>
-                    <span>Siga-nos</span>
-                    <MenuSocialMediaFooter />
+                <div>                    
+                    <span>Siga-nos nas redes</span>
+                    <MenuSocialMediaFooter />                    
                 </div>
             </div>
             <div className={styles.footerCopyright}>

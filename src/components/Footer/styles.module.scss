@@ -1,45 +1,38 @@
 ﻿.footerConteiner {
-    //height: 10rem;
     border-top: 1px solid var(--gray-300);
     background-color: var(--blue);
     display: flex;
     flex-direction: column;
 }
 .footerContent {
-    //max-width: 1120px;
-    //padding: 3rem 0 0 2rem;
     padding: 2rem;
-    //margin: 0 auto;
     display: flex;
-    //flex-wrap: wrap;
     flex-direction: row;
     align-items: center; 
     justify-content: space-between;
     div {
-        //margin: 2rem 1rem 1rem 2rem;
-        padding: 0 1rem 1rem 1rem;
+        padding: 1rem;
         span {
             font-weight: bold;
             color: var(--white);
             transition: color 0.2s;
-            margin-bottom: 0.5rem;
-            
-            &:hover {
-                color: var(--gray-300);
-            }
         }
         p {
-            margin: 0.5rem, 0 ,0.5rem, 0 ;
             color: var(--white);
             padding: 0 1rem 0;
         }
     }
 }
+.item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
 .footerCopyright {
-    padding: 0.625rem;
+    padding: 1rem;
     color: var(--white);
     text-align: center;
-    background-color: var(--blue);
+    background-color: var(--blue-100);
 }
 .icon{
     width: 2rem;
@@ -49,10 +42,14 @@
 @media(max-width: 450px){
     .footerContent{
         flex-direction: column;
-        padding: 1rem;
+        padding: 0.35rem;
         justify-content: center;
-        p{
-            text-align: center;
+        div {
+            span {
+                text-align: center;
+            }
+            
         }
+        
     }
 }
