@@ -1,9 +1,10 @@
 ﻿.card {
  background: #d9d9d9;
+ border: 1px solid #0000;
  border-radius: 2.5rem;
  padding: 2rem;
  display: flex;
- flex-direction: row;
+ flex-direction: column;
 }
 .subCard {
    display: flex;
@@ -15,12 +16,22 @@
 .subModalRadix{
    display: flex;
    flex-direction: row;
+   border: 1px solid #0000;
    justify-content: center;
    align-items: center;
    margin: 1rem;
 }
+@media(max-width: 950px){
+   .subModalRadix {
+      margin: 0.10rem;
+   }
+}
 @media(max-width: 560px){
-   .card{
+   .card {
+      padding: 1rem;
+      flex-direction: column;
+   }
+   .subModalRadix {
       flex-direction: column;
    }
 }

@@ -6,7 +6,7 @@ import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
 import { CardListEmpresas } from '../src/components/CardListEmpresas';
-import { DropdownMenuRadixUI } from '../src/components/DropdownMenuRadixUI';
+import { ButtonDownload } from '../src/components/ButtonDownload';
 
 export default function Home() {
   return (
@@ -56,16 +56,16 @@ export default function Home() {
             visando ganhos bilaterais entre os paceiros</p>
             <span>I. Tipos de instrumentos jurídicos anteriores à formalização de parcerias:</span>
             <ul>
-              <li><a>Edital de pacerias</a></li>
-              <li><a>Termo de Confidencialidade</a></li>
-              <li><a>Protocolo de Intenções</a></li>
+              <li><div><p>Edital de pacerias</p></div><ButtonDownload/></li>
+              <li><div><p>Termo de Confidencialidade</p></div><ButtonDownload/></li>
+              <li><div><p>Protocolo de Intenções</p></div><ButtonDownload/></li>
             </ul>
             <span>II. Tipos de instrumentos jurídicos para formalização de parcerias:</span>
             <ul>
-              <li><a>Convênio: Termo de Cooperação</a></li>
-              <li><a>Comodato Padrão</a></li>
-              <li><a>Comodato Escolas Móveis</a></li>
-              <li><a>Cessão Não-onerosa de Software</a></li>
+              <li><div><p>Convênio: Termo de Cooperação</p></div><ButtonDownload/></li>
+              <li><div><p>Comodato Padrão</p></div><ButtonDownload /></li>
+              <li><div><p>Comodato Escolas Móveis</p></div><ButtonDownload /></li>
+              <li><div><p>Cessão Não-onerosa de Software</p></div><ButtonDownload /></li>
             </ul>
           </section>
           <section className={styles.sectionContainer}>

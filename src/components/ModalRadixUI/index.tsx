@@ -5,9 +5,13 @@ import { AiFillCloseCircle } from "react-icons/ai";
 import { ContentModal } from "../ContentModal";
 import style from "./styles.module.scss";
 
+type ModalProps = {
+    title : string;
+    src: string;
+    area: number;
+}
 
-
-export function ModalRadixUI({title, src, empresa, escola}){
+export function ModalRadixUI({title, src, area }:ModalProps){
     const [isOpen, setIsOpen] = useState(false);
     return (
         <Dialog.Root defaultOpen open={isOpen} onOpenChange={setIsOpen} modal>
@@ -26,7 +30,7 @@ export function ModalRadixUI({title, src, empresa, escola}){
                                 </Dialog.Close>
                             </div>
                         </div>                    
-                        <ContentModal empresa={empresa} escola={escola} />                        
+                        <ContentModal key={area} area={area}/>                        
                     </Dialog.Content>
                 </Dialog.Overlay>
             </Dialog.Portal>

@@ -13,92 +13,63 @@ import styles from "./styles.module.scss";
 import { ModalRadixUI } from "../ModalRadixUI";
 import { parceiros } from "../../../public/parceiros";
 import list from "../../../public/parceiros.json";
+import { ReactNode } from "react";
 
 
-const list_parceiros = parceiros.map((item) => {
-    return (
-        <div className={styles.subModalRadix}>
-            <ModalRadixUI
-                title={item.area}
-                src={plant}
-                empresa={item.empresa}
-                escola={item.escola_responsavel}
-            />
-        </div>    
-    )
-});
-const parceiros_json = list.Agronegócio.map(item => {
-    <ModalRadixUI
-        title={list.Agronegócio}
-        src={plant}
-        empresa={item.empresa}
-        escola={item.escola_responsavel}
-    />
-});
 export function CardListEmpresas(){
 
     return (
         <div className={styles.card}>
-            <div className={styles.subCard}>
-                {/*<ModalRadixUI
+            <div className={styles.subModalRadix}>
+                <ModalRadixUI
                     title={'Agronegócio'}
                     src={plant}
-                    empresa={'John Deere do Brasil'}
-                    escola={'602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes'}
+                    area={1}
                 />
                 <ModalRadixUI
                     title={'Alimentos'}
                     src={fork}
-                    empresa={'Finamac Engenharia e Industrialização de Equipamentos'}
-                    escola={'105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira'}
+                    area={2}
                 />
                 <ModalRadixUI
                     title={'Associações'}
                     src={association}
-                    empresa={'Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL'}
-                    escola={'124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho'}
+                    area={3}
                 />
             </div>
-            <div className={styles.subCard}>
+            <div className={styles.subModalRadix}>
                 <ModalRadixUI
                     title={'Atomação'}
                     src={auto_industry}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    area={4}
                 />
                 <ModalRadixUI
                     title={'Automotiva'}
                     src={automotiva}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    area={5}
                 />
                 <ModalRadixUI
                     title={'Cerâmica'}
                     src={ceramica}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    area={6}
                 />
             </div>
-            <div className={styles.subCard}>
+            <div className={styles.subModalRadix}>
                 <ModalRadixUI
-                    title={'Sofware'}
+                    title={'Construção'}
                     src={ti}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    area={7}
                 />
                 <ModalRadixUI
-                    title={'Papelaria'}
+                    title={'Eletrônica'}
                     src={grafica}
-                    empresa={'nokia'}
-                    escola={'senai'}
+                    area={8}
                 />
                 <ModalRadixUI
-                    title={'Gestão'}
+                    title={'Energia'}
                     src={gestor}
-                    empresa={'nokia'}
-                    escola={'senai'}
-                />*/}
-                {list_parceiros}
+                    area={9}
+                />
             </div>                    
         </div>
     )
