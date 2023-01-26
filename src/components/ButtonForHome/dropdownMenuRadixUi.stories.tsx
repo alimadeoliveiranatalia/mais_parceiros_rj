@@ -1,8 +1,8 @@
 ﻿import { StoryObj } from "@storybook/react";
-import { DropdownMenuRadixUI } from ".";
+import { ButtonForHome } from ".";
 
 export default {
-    component: DropdownMenuRadixUI,
+    component: ButtonForHome,
     title: "components/DropdownMenuRadixUI"
 }
 export const Default : StoryObj = {}
