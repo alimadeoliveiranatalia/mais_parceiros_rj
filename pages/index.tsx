@@ -7,21 +7,21 @@ import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
 import { CardListEmpresas } from '../src/components/CardListEmpresas';
 import { ButtonDownload } from '../src/components/ButtonDownload';
-import { useState } from 'react';
+import { useState, UIEvent } from 'react';
 import { ButtonForHome } from '../src/components/ButtonForHome';
 
 export default function Home() {
-  const [pageYPosition, setPageYPosition] = useState(0);
+  const [ scrollTop, setScrollTop] = useState(0);
   
-  function handleOnWhell(event){
+  function handleScroll(event: UIEvent<HTMLDivElement>){
     console.log(event);
-    setPageYPosition(event)
+    //setScrollTop(event)
   }
   
   return (
     <>
       <Head><title>Senai + Parceiros</title></Head>
-        <main onWheel={ (event) => handleOnWhell(event.deltaY) }>
+        <main onScroll={ (event) => handleScroll(event.currentTarget.scrollTop) }>
           <section id="home" className={styles.sectionContainer}>
             <br />
             <div className={styles.title}>
@@ -48,7 +48,7 @@ export default function Home() {
             <br />
             <p>Confira a lista de empresas que já são parceiros:</p>
             <br />
-            {pageYPosition < 120 && <ButtonForHome/>}
+            {/*pageYPosition >= 20 && <ButtonForHome/>*/}
             <CardListEmpresas />
           </section>
           <section className={styles.sectionContainer}>
