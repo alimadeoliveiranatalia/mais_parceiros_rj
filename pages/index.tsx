@@ -7,7 +7,7 @@ import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
 import { CardListEmpresas } from '../src/components/CardListEmpresas';
 import { ButtonDownload } from '../src/components/ButtonDownload';
-import { useState, UIEvent } from 'react';
+import { useState } from 'react';
 import { ButtonForHome } from '../src/components/ButtonForHome';
 
 export default function Home() {

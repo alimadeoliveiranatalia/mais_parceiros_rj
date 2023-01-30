@@ -50,8 +50,11 @@
 }
 @media(max-width: 450px){
   .sectionContainer{
+    
     p {
       text-align: justify;
+      padding: 0.2rem;
+      line-height: 2rem;
     }
   }
   
