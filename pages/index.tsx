@@ -13,15 +13,15 @@ import { ButtonForHome } from '../src/components/ButtonForHome';
 export default function Home() {
   const [ scrollTop, setScrollTop] = useState(0);
   
-  function handleScroll(event: UIEvent<HTMLDivElement>){
-    console.log(event);
-    //setScrollTop(event)
+  function handleScroll(){
+    console.log(window.scrollY);
+    setScrollTop(window.scrollY);
   }
-  
+
   return (
     <>
       <Head><title>Senai + Parceiros</title></Head>
-        <main onScroll={ (event) => handleScroll(event.currentTarget.scrollTop) }>
+        <main onWheel={handleScroll}>
           <section id="home" className={styles.sectionContainer}>
             <br />
             <div className={styles.title}>
@@ -48,7 +48,7 @@ export default function Home() {
             <br />
             <p>Confira a lista de empresas que já são parceiros:</p>
             <br />
-            {/*pageYPosition >= 20 && <ButtonForHome/>*/}
+            { scrollTop > 400 && <ButtonForHome/> }
             <CardListEmpresas />
           </section>
           <section className={styles.sectionContainer}>
