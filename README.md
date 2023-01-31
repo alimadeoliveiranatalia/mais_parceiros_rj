@@ -6,8 +6,11 @@
 ## Principais Ferramentas de Desenvolvimento Utilizadas:
 
 Framework WEB: [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+
 Biblioteca para criação de interfaces de Usuário: [React](https://pt-br.reactjs.org/)
+
 Componentes de Interface de Usuário: [RadixUI](https://www.radix-ui.com/)
+
 Biblioteca de Animação de Interfaces: [FramerMotion](https://www.framer.com/motion/)
 
 
