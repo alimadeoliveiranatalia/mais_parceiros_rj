@@ -1,6 +1,6 @@
 ﻿.footerConteiner {
     border-top: 1px solid var(--gray-300);
-    background-color: var(--blue);
+    background-color: var(--dark-blue);
     display: flex;
     flex-direction: column;
 }
@@ -10,6 +10,7 @@
     flex-direction: row;
     align-items: center; 
     justify-content: space-between;
+    background-color: var(--blue);
     div {
         padding: 1rem;
         span {

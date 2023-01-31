@@ -15,7 +15,7 @@ const questionsAnswers = [
   },
   {
     question: 'Antecipação de Tendências Tecnológicas',
-    answer: 'É importante que a sociedade esteja preparada para as novas demandas do mercado de trabalho, principalmente quando se trata das tecnologias de vanguarda e habilhitadoras para a indústria 4.0.'
+    answer: 'É importante que a sociedade esteja preparada para as novas demandas do mercado de trabalho, principalmente quando se trata das tecnologias habilitadoras para a indústria 4.0.'
   },
   {
     question: 'Troca de Experiência e Conhecimento',
