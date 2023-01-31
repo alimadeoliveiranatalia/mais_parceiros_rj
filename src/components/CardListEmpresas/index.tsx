@@ -1,5 +1,4 @@
-﻿import { CardAtuacao } from "../CardAtuacao";
-import plant from "../../../public/images/icons_parceiros/icon-park-solid_pure-natural.svg";
+﻿import plant from "../../../public/images/icons_parceiros/icon-park-solid_pure-natural.svg";
 import fork from "../../../public/images/icons_parceiros/fluent_food-16-filled.svg";
 import association from "../../../public/images/icons_parceiros/icon-park_association.svg";
 import auto_industry from "../../../public/images/icons_parceiros/carbon_ibm-cloud-pak-network-automation.svg";
@@ -11,9 +10,6 @@ import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce
 
 import styles from "./styles.module.scss";
 import { ModalRadixUI } from "../ModalRadixUI";
-import { parceiros } from "../../../public/parceiros";
-import list from "../../../public/parceiros.json";
-import { ReactNode } from "react";
 
 
 export function CardListEmpresas(){

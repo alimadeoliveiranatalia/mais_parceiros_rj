@@ -19,7 +19,7 @@ const questionsAnswers = [
   },
   {
     question: 'Troca de Experiência e Conhecimento',
-    answer: 'Uma parceria pode proporcionar uma ampla troca de experiências, trazer insights, adquirir novas habilhidades, que possam contribuir para a expansão do negócio.'
+    answer: 'Uma parceria pode proporcionar uma ampla troca de experiências, trazer insights, adquirir novas habilidades, que possam contribuir para a expansão do negócio.'
   },
   {
     question: 'Mais valor agregado para as marcas parceiras',
@@ -27,11 +27,11 @@ const questionsAnswers = [
   },
   {
     question: 'Difusão Tecnológica',
-    answer: 'Os esforços conjuntos do SENAI e de seus parceiros, visam a mordenização de processos, mediante ao uso de produtos e serviços difundidos no mercado.'
+    answer: 'Os esforços conjuntos do FIRJAN e de seus parceiros, visam a mordenização de processos, mediante ao uso de produtos e serviços difundidos no mercado.'
   },
   {
-    question: 'Capilaridade da Rede Senai',
-    answer: 'Uma parceria consolidada com uma Unidade Operacional do SENAI posibilita sua disseminação pela rede no estado, trazendo mais vantagens para as empresas parceiras.'
+    question: 'Capilaridade da Rede FIRJAN',
+    answer: 'Uma parceria consolidada com uma Unidade Operacional da FIRJAN posibilita sua disseminação pela rede no estado, trazendo mais vantagens para as empresas parceiras.'
   }    
 ];
 
