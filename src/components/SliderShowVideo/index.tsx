@@ -6,29 +6,29 @@ import styles from './styles.module.scss';
 
 const linkVideo = [
     {
-        src : 'https://www.youtube.com/embed/wDflrSMTf_Q',
-        title : '+Parceiros – Top Solid – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
-        company: 'Top Solid'
+        src : 'https://www.youtube.com/watch?v=hgjfQJroR8k',
+        title : '+Parceiros – Firjan – Depoimento de quem já faz parte da nossa rede | FIRJAN',
+        company: 'Firjan'
     },
     {
-        src : 'https://www.youtube.com/embed/3DbnSUSTYXw',
-        title: '+Parceiros – Cisco – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
-        company: 'Cisco' 
+        src : 'https://www.youtube.com/watch?v=Fu7FQCcXNpY',
+        title: '+Parceiros – Casa Firjan – Depoimento de quem já faz parte da nossa rede | FIRJAN',
+        company: 'Casa Firjan' 
     },
     {
-        src: 'https://www.youtube.com/watch?v=mzQZMOPcasQ',
-        title: '+Parceiros – Nokia – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
-        company: 'Nokia'
+        src: 'https://www.youtube.com/watch?v=Xxkk6tyHhxE',
+        title: '+Parceiros – Construção – Depoimento de quem já faz parte da nossa rede | FIRJAN',
+        company: 'Campanha'
     },
     {
-        src: 'https://www.youtube.com/watch?v=yy7_1qXX3j8',
-        title: '+Parceiros – BMW – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
-        company: 'BMW Automotiva'
+        src: 'https://www.youtube.com/watch?v=MO00N2FE2LM',
+        title: '+Parceiros – eSocial – Depoimento de quem já faz parte da nossa rede | FIRJAN',
+        company: 'eSocial'
     },
     {
-        src: 'https://www.youtube.com/watch?v=7NlotjXvcIE',
-        title: '+Parceiros – Triumph – Depoimento de quem já faz parte da nossa rede | Senai São Paulo',
-        company: 'Triumph'
+        src: 'https://www.youtube.com/watch?v=2w1ZvAsZpOo',
+        title: '+Parceiros – Rede Oléo e Gás – Depoimento de quem já faz parte da nossa rede | FIRJAN',
+        company: 'Rede De Oléo e gás'
     }
 ];
 
