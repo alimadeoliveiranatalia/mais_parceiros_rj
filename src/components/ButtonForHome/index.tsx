@@ -5,7 +5,7 @@ export function ButtonForHome(){
   
   return (
     <div className={styles.toggle_button}>
-      <a href="#home" className={styles.link}>
+      <a href="#home" aria-label="Ir para o início" className={styles.link}>
         <ImHome className={styles.icon}/>
       </a>
     </div>
