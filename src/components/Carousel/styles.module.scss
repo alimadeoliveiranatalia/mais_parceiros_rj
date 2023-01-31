@@ -7,14 +7,12 @@
     align-items: center;
     justify-content: center;
     border-radius: 0.625rem;
-    //overflow-x: scroll;
     
 }
 .carousel{
     cursor: grab;
     gap: 2.5rem;
     overflow: hidden;
-    //background-color: purple;
 }
 .inner {
     display: flex;
@@ -31,7 +29,7 @@
         pointer-events: none;
         background-color: #DBD7D7;
         padding: 1rem;
-        //margin: 1rem;
+        margin: 1rem;
         span {
             width: 20rem;
             height: 1.75rem;
