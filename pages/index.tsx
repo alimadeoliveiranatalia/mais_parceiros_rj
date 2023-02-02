@@ -11,17 +11,22 @@ import { useState } from 'react';
 import { ButtonForHome } from '../src/components/ButtonForHome';
 
 export default function Home() {
-  const [ scrollTop, setScrollTop] = useState(0);
-  
-  function handleScroll(){
-    console.log(window.scrollY);
-    setScrollTop(window.scrollY);
+  const [ pageYPosition, setPageYPosition ] = useState(0);
+
+  function getPageYAfterScroll(){
+    setPageYPosition(window.scrollY);
+  }
+
+  if(typeof window !== 'undefined'){
+    window.addEventListener('scroll', getPageYAfterScroll);
+  } else {
+    console.log('You are on the server, Cannot execute');
   }
 
   return (
     <>
       <Head><title>Senai + Parceiros</title></Head>
-        <main onWheel={handleScroll}>
+        <main>
           <section id="home" className={styles.sectionContainer}>
             <br />
             <div className={styles.title}>
@@ -48,7 +53,7 @@ export default function Home() {
             <br />
             <p>Confira a lista de empresas que já são parceiros:</p>
             <br />
-            { scrollTop > 400 && <ButtonForHome/> }
+            { pageYPosition > 400 && <ButtonForHome/> }
             <CardListEmpresas />
           </section>
           <section className={styles.sectionContainer}>
