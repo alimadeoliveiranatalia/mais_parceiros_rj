@@ -1,5 +1,4 @@
 ﻿import { AiOutlineLeft } from "react-icons/ai";
-import { Default } from "../Carousel/carousel.stories";
 import styles from "./styles.module.scss";
 
 interface ButtonLefthProps {
