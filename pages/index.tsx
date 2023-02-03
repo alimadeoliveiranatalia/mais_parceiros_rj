@@ -7,21 +7,21 @@ import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
 import { CardListEmpresas } from '../src/components/CardListEmpresas';
 import { ButtonDownload } from '../src/components/ButtonDownload';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { ButtonForHome } from '../src/components/ButtonForHome';
 
 export default function Home() {
-  const [ pageYPosition, setPageYPosition ] = useState(0);
+  const [ scrollY, setScrollY ] = useState(0);
+  
+  useEffect(() => {
+    function handleScroll(){
+      setScrollY(window.scrollY);
+    }
 
-  function getPageYAfterScroll(){
-    setPageYPosition(window.scrollY);
-  }
+    window.addEventListener('scroll', handleScroll);
 
-  if(typeof window !== 'undefined'){
-    window.addEventListener('scroll', getPageYAfterScroll);
-  } else {
-    console.log('You are on the server, Cannot execute');
-  }
+    return () => window.removeEventListener("scroll", handleScroll);
+  },[]);
 
   return (
     <>
@@ -53,7 +53,7 @@ export default function Home() {
             <br />
             <p>Confira a lista de empresas que já são parceiros:</p>
             <br />
-            { pageYPosition > 400 && <ButtonForHome/> }
+            { scrollY > 300 && (<ButtonForHome/>) }
             <CardListEmpresas />
           </section>
           <section className={styles.sectionContainer}>
