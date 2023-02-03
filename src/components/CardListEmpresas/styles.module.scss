@@ -21,12 +21,8 @@
    align-items: center;
    margin: 1rem;
 }
-@media(max-width: 950px){
-   .subModalRadix {
-      margin: 0.10rem;
-   }
-}
-@media(max-width: 560px){
+
+@media(max-width: 900px){
    .card {
       padding: 1rem;
       flex-direction: column;
