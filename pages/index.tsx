@@ -7,22 +7,10 @@ import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';
 import { CardListEmpresas } from '../src/components/CardListEmpresas';
 import { ButtonDownload } from '../src/components/ButtonDownload';
-import { useEffect, useState } from 'react';
 import { ButtonForHome } from '../src/components/ButtonForHome';
 
 export default function Home() {
-  const [ scrollY, setScrollY ] = useState(0);
   
-  useEffect(() => {
-    function handleScroll(){
-      setScrollY(window.scrollY);
-    }
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => window.removeEventListener("scroll", handleScroll);
-  },[]);
-
   return (
     <>
       <Head><title>Senai + Parceiros</title></Head>
@@ -53,7 +41,7 @@ export default function Home() {
             <br />
             <p>Confira a lista de empresas que já são parceiros:</p>
             <br />
-            { scrollY > 300 && (<ButtonForHome/>) }
+            <ButtonForHome/>
             <CardListEmpresas />
           </section>
           <section className={styles.sectionContainer}>
