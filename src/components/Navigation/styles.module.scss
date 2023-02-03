@@ -1,4 +1,7 @@
-﻿.navigation{
+﻿$color_theme: var(--blue);
+$color-gray-hover: var(--gray-300);
+$color-white: var(--white);
+.navigation{
     width: 90%;
     max-width: 49rem;
     margin:  0 auto;
@@ -11,10 +14,15 @@
         margin: 0.5rem;
         padding: 1rem;
         font-weight: 700;
-        background-color: var(--blue);
-        color: #FFF;
+        background-color: $color_theme;
+        color: $color-white;
         font-size: 1.25rem;
         line-height: 1.5rem;
+        transition: color 0.2s;
+
+        &:hover {
+            color: $color-gray-hover;
+        }
     }
 
 }
