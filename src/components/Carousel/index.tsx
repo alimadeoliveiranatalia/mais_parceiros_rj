@@ -62,8 +62,7 @@ export function Carousel(){
   return(
     <div className={styles.slider}>
       <ButtonPressLefth prevSlide={prevSlide}/>
-        <motion.div
-          
+        <motion.div          
           ref={ carousel }
           className={styles.carousel}
           whileTap={{ cursor: 'grabbing'}}

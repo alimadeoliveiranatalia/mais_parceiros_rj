@@ -1,6 +1,6 @@
 ﻿import { ImFacebook, ImTwitter, ImYoutube, ImLinkedin } from 'react-icons/im';
 
-import styles from '../MenuSocialMedia/styles.module.scss';
+import styles from './styles.module.scss';
 
 export function MenuSocialMediaFooter(){
     return (

@@ -5,28 +5,28 @@ import styles from './styles.module.scss';
 export function Footer(){
     return(
         <footer role='contentinfo' className={styles.footerConteiner}>
+            <MenuSocialMediaFooter />
             <div className={styles.footerContent}>
                 <div className={styles.item}>
-                    <ImPhone className={styles.icon}/>
                     <div>
                         <span>
-                            Central de Atendimento
+                            <a
+                                href='https://www.firjan.com.br/termo-de-privacidade.htm'
+                                aria-label='acesse nossos termos'
+                            >
+                                Termos de Privacidade
+                            </a>
                         </span>
-                        <p>4002-0231 (Custo de Ligação Local)</p>
-                        <p>0800-0231-231 (Ligações gratuitas de telefones no Estado do Rio)</p>
-                        <p>Seg. à Sex. das 9h às 18hrs</p>
+                        <p>Atendimento para empresas</p>
+                        <p>Atendimento à comunidade</p>                        
                     </div>
                 </div>
                 <div className={styles.item}>
                     <div>
-                        <a aria-label='Acesse os termos de uso e privacidade' href='https://www.firjan.com.br/termo-de-privacidade.htm'>                        
-                            Termos de Privacidade
-                        </a>
+                        <span>(21) 4042-6565</span>
+                        <p>Horário de Atendimento:</p>
+                        <p>Seg à Sex/ das 9hrs às 18hrs</p>
                     </div>
-                </div>
-                <div>                    
-                    <span>Siga-nos nas redes</span>
-                    <MenuSocialMediaFooter />                    
                 </div>
             </div>
             <div className={styles.footerCopyright}>
