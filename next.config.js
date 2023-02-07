@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: "/gh-pages-test",
+  basePath: "/",
+  assetPrefix: "/",
   reactStrictMode: true,
   swcMinify: true,
   images: {
