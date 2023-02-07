@@ -17,6 +17,9 @@ if(isGithubActions){
 const nextConfig = {
   assetPrefix: assertPrefix,
   basePath: basePath,
+  images: {
+    unoptimized: true
+  }
   
 }
 
