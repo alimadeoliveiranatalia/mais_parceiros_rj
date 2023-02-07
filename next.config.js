@@ -2,9 +2,9 @@
 
 const isGithubActions = process.env.GITHUB_ACTIONS || false;
 
-let assertPrefix = "";
+let assertPrefix = "./";
 
-let basePath = "/";
+let basePath = '/';
 
 if(isGithubActions){
  const repositorio = process.env.GITHUB_REPOSITORY.replace(/.*?\//, "");
