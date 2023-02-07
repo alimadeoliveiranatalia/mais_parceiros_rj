@@ -3,6 +3,8 @@
 on:
   push:
     branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
 jobs:
   build:
@@ -19,6 +21,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: yarn
-      - run: yarn build
-      - run: yarn start
+      - run: npm ci
+      - run: npm run build
+      - run: npm run export
+      
+      - name: Deploy
+        uses: alimadeoliveiranatalia/mais_parceiros_rj@1.0.0
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN}}
+          BRANCH: main
+          FOLDER: build
