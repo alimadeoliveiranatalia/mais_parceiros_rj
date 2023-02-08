@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { AiFillCloseCircle } from "react-icons/ai";
 import { ContentModal } from "../ContentModal";
-import style from "./styles.module.scss";
+import style from "./styles.module.css";
 
 type ModalProps = {
     title : string;

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { SliderShowVideo } from '../src/components/SliderShowVideo';
 import { Carousel } from '../src/components/Carousel';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/Home.module.css';
 import { Form } from '../src/components/Form';
 import { Navigation } from '../src/components/Navigation';
 import { MenuSocialMedia } from '../src/components/MenuSocialMedia';

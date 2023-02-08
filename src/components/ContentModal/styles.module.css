@@ -7,12 +7,12 @@
     height: 78px;
     padding: 2rem;
     background: #FFFFFF;
-    th {
-        text-transform: uppercase;
-        font-weight: 800;
-        font-size: 1.5rem;
-    }
-    td {
-        font-size: 1.5;
-    }
+}
+.table th {
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 1.5rem;
+}
+.table td {
+    font-size: 1.5;
 }

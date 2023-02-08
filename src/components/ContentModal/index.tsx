@@ -1,6 +1,6 @@
 ﻿import Image from "next/image";
 import logo from "../../../public/icons_parceiros/john_deere.svg";
-import styles from "./styles.module.scss";
+import styles from "./styles.module.css";
 import list_parceiros from "../../../public/parceiros.json";
 
 export interface ContentModalProps{

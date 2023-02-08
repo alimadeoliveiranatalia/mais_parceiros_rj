@@ -1,6 +1,5 @@
-﻿import {ImLocation2, ImPhone} from 'react-icons/im';
-import { MenuSocialMediaFooter } from '../MenuSocialMediaFooter';
-import styles from './styles.module.scss';
+﻿import { MenuSocialMediaFooter } from '../MenuSocialMediaFooter';
+import styles from './styles.module.css';
 
 export function Footer(){
     return(

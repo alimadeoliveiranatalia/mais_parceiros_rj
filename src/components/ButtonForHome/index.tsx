@@ -1,6 +1,6 @@
 ﻿import { useEffect, useState } from 'react';
 import { ImHome } from 'react-icons/im';
-import styles from "./styles.module.scss";
+import styles from "./styles.module.css";
 
 export function ButtonForHome(){
   const [showButton, setShowButton] = useState(false);

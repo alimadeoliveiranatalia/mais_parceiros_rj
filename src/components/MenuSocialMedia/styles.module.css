@@ -1,0 +1,36 @@
+﻿.navConteiner {
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+.navConteiner a {
+    display: inline-block;
+    color: var(--blue);
+    position: relative;
+    padding: 0 0.5rem;
+    transition: color 0.2s;
+}
+.navConteiner a:hover {
+    color: var(--gray-300);
+}
+.navConteinerFooter{
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+}
+.navConteinerFooter a {
+    display: inline-block;
+    color: var(--white);
+    position: relative;
+    padding: 0 0.5rem;
+    transition: color 0.2s;
+}
+.navConteinerFooter a:hover {
+    color: var(--gray-300);
+}
+
+@media(max-width: 560px){
+    .navConteiner{
+        display: none;
+    }
+}

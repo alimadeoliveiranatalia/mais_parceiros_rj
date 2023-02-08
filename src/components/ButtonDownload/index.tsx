@@ -1,4 +1,4 @@
-﻿import styles from "./styles.module.scss";
+﻿import styles from "./styles.module.css";
 import { AiOutlineDownload } from "react-icons/ai";
 
 export function ButtonDownload(){

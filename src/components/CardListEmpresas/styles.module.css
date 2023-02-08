@@ -21,7 +21,7 @@
    align-items: center;
    margin: 1rem;
 }
-
+ 
 @media(max-width: 900px){
    .card {
       padding: 1rem;

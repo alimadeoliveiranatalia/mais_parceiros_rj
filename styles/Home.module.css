@@ -1,0 +1,54 @@
+﻿.sectionContainer {
+    width: 100%;
+    max-width: 1110px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 1rem;
+    background: var(--white-100);
+}
+.sectionContainer h1 {
+    color: var(--blue);
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.2rem;
+    line-height: 2.688rem;
+    padding-bottom: 10px;
+    margin-bottom: 8px;
+}
+.sectionContainer h2 {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: solid 1px #333333;
+}
+.sectionContainer p {
+  font-size: 1rem;
+  line-height: 2.25rem;
+  padding: auto;
+  margin-top: 1.5rem auto;
+}
+.sectionContainer span {
+  padding: 2rem auto;
+  margin: 1rem;
+}
+.sectionContainer li {
+    display: flex;
+    margin-left: 2.5rem;
+    padding: auto;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+  
+@media(max-width: 450px){
+  .sectionContainer p {    
+    text-align: justify;
+    padding: 0.2rem;
+    line-height: 2rem;
+  }  
+}

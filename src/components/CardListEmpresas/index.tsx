@@ -8,7 +8,7 @@ import ti from "../../../public/images/icons_parceiros/mdi_desktop-classic.svg";
 import grafica from "../../../public/images/icons_parceiros/el_file-edit.svg";
 import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce-management.svg";
 
-import styles from "./styles.module.scss";
+import styles from "./styles.module.css";
 import { ModalRadixUI } from "../ModalRadixUI";
 
 

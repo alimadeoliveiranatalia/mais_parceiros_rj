@@ -22,30 +22,29 @@
     min-height: 14.5rem;
     min-width: 25rem;
     padding: 0.875rem;
-    
-    div {
-        width: 20rem;
-        height: 90%;
-        pointer-events: none;
-        background-color: #DBD7D7;
-        padding: 1rem;
-        margin: 1rem;
-        span {
-            width: 20rem;
-            height: 1.75rem;
-            font-style: normal;
-            font-weight: 700;
-            font-size: 1rem;
-            line-height: 1.75rem;
-        }
-        p {
-           font-style: normal;
-           text-align: justify;
-            font-weight: 400;
-            font-size: 0.85rem;
-            line-height: 1.75rem;
-        }
-    }
+}
+.item div {
+    width: 20rem;
+    height: 90%;
+    pointer-events: none;
+    background-color: #DBD7D7;
+    padding: 1rem;
+    margin: 1rem;
+}
+.item span {
+    width: 20rem;
+    height: 1.75rem;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.75rem;
+}
+.item p {
+   font-style: normal;
+   text-align: justify;
+    font-weight: 400;
+    font-size: 0.85rem;
+    line-height: 1.75rem;
 }
 .iconButton{
     width: 4rem;
@@ -65,10 +64,10 @@
     }
     .inner {
         text-align: center;    
-        .item{
-            min-width: 22rem;
-            padding: 0.70rem;
-        }
-        p {margin-top: 1rem};
     }
+    .item{
+        min-width: 22rem;
+        padding: 0.70rem;
+    }
+    .item p {margin-top: 1rem};
 }

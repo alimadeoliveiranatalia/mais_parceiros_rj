@@ -1,5 +1,5 @@
 ﻿import { motion } from 'framer-motion';
-import styles from './styles.module.scss';
+import styles from './styles.module.css';
 import { useEffect, useRef, useState } from "react";
 import { ButtonPressLefth } from '../ButtonPressLefth';
 import { ButtonPressRight } from '../ButtonPressRight';

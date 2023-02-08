@@ -1,0 +1,23 @@
+﻿.headerContent{
+    height: 8.25rem;
+    background: var(--gray-200);
+    display: flex;
+    justify-content: flex-start;
+}
+.headerContent div {
+    width: 11.553rem;
+    background-color: var(--gray-200);
+    height: 1.573rem;
+    left: 11.313rem;
+    top: 5.399rem;
+    color: var(--dark-blue);
+}
+.headerContent span {
+    border-radius: 0.94rem;
+}
+.header_itens {
+    margin: 5rem 0.5rem 1rem 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
