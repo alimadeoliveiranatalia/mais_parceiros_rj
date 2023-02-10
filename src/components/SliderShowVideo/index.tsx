@@ -6,27 +6,27 @@ import styles from './styles.module.css';
 
 const linkVideo = [
     {
-        src : 'https://www.youtube.com/watch?v=hgjfQJroR8k',
+        src : 'https://www.youtube.com/embed/hgjfQJroR8k',
         title : '+Parceiros – Firjan – Depoimento de quem já faz parte da nossa rede | FIRJAN',
         company: 'Firjan'
     },
     {
-        src : 'https://www.youtube.com/watch?v=Fu7FQCcXNpY',
+        src : 'https://www.youtube.com/embed/Fu7FQCcXNpY',
         title: '+Parceiros – Casa Firjan – Depoimento de quem já faz parte da nossa rede | FIRJAN',
         company: 'Casa Firjan' 
     },
     {
-        src: 'https://www.youtube.com/watch?v=Xxkk6tyHhxE',
+        src: 'https://www.youtube.com/embed/Xxkk6tyHhxE',
         title: '+Parceiros – Construção – Depoimento de quem já faz parte da nossa rede | FIRJAN',
         company: 'Campanha'
     },
     {
-        src: 'https://www.youtube.com/watch?v=MO00N2FE2LM',
+        src: 'https://www.youtube.com/embed/MO00N2FE2LM',
         title: '+Parceiros – eSocial – Depoimento de quem já faz parte da nossa rede | FIRJAN',
         company: 'eSocial'
     },
     {
-        src: 'https://www.youtube.com/watch?v=2w1ZvAsZpOo',
+        src: 'https://www.youtube.com/embed/2w1ZvAsZpOo',
         title: '+Parceiros – Rede Oléo e Gás – Depoimento de quem já faz parte da nossa rede | FIRJAN',
         company: 'Rede De Oléo e gás'
     }
