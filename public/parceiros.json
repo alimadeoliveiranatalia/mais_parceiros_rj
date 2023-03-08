@@ -89,57 +89,29 @@
             "escola_responsavel": "Firjan"
         }
     ],
-    "eletronica" : [
-        {
-            "id": 14,
-            "area": "Eletrônica",
-            "empresa": "Wago Eletronica LTDA",
-            "escola_responsavel": "510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
-        },
-        {
-            "id": 15,
-            "area": "Eletrônica",
-            "empresa": "Wago Eletronica LTDA",
-            "escola_responsavel": "510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
-        }
-    ],
     "energia" : [
         {
-            "id": 16,
+            "id": 14,
             "area": "Energia e Eletricidade",
             "empresa":"Macomevap",
             "escola_responsavel":"Firjan"
         },
         {
-            "id": 17,
+            "id": 15,
             "area": "Energia e Eletricidade",
             "empresa":"Minipa",
             "escola_responsavel":"Firjan"
         }
     ],
-    "biomedicina":[
-        {
-            "id": 18,
-            "area": "Equipamentos Biomédicos",
-            "empresa":"Biosensor Indústria e Comércio LTDA",
-            "escola_responsavel":"106 - Escola Senai - Vila Leopoldina - Mariano Ferraz"
-        },
-        {
-            "id": 19,
-            "area": "Equipamentos Biomédicos",
-            "empresa":"Biosensor Indústria e Comércio LTDA",
-            "escola_responsavel":"106 - Escola Senai - Vila Leopoldina - Mariano Ferraz"
-        }
-    ],
     "gestao" : [
         {
-            "id": 20,
+            "id": 16,
             "area": "Gestão",
             "empresa":"Município São Pedro da Aldeia",
             "escola_responsavel":"Firjan"
         },
         {
-            "id": 21,
+            "id": 17,
             "area": "Gestão",
             "empresa":"ERFLEX software LTDA",
             "escola_responsavel":"Firjan"
@@ -147,13 +119,13 @@
     ],
     "automotiva": [
         {
-            "id": 22,
+            "id": 18,
             "area": "Automotiva",
             "empresa":"Stellantis",
             "escola_responsavel":"Firjan"
         },
         {
-            "id": 23,
+            "id": 19,
             "area": "Automotiva",
             "empresa":"FCA FIAT Chrysler Automóveis Brasil LTDA",
             "escola_responsavel":"Firjan"

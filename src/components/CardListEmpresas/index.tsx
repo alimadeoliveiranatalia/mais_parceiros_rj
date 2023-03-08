@@ -1,11 +1,11 @@
-﻿import plant from "../../../public/images/icons_parceiros/icon-park-solid_pure-natural.svg";
+﻿import mechanic from "../../../public/images/icons_parceiros/fluent-emoji-high-contrast_man-mechanic.svg";
 import fork from "../../../public/images/icons_parceiros/fluent_food-16-filled.svg";
-import association from "../../../public/images/icons_parceiros/icon-park_association.svg";
-import auto_industry from "../../../public/images/icons_parceiros/carbon_ibm-cloud-pak-network-automation.svg";
+import plastic from "../../../public/images/icons_parceiros/fluent_drink-bottle-20-filled.svg";
+import computer from "../../../public/images/icons_parceiros/mdi_desktop-classic.svg";
 import automotiva from "../../../public/images/icons_parceiros/bxs_car-mechanic.svg";
-import ceramica from "../../../public/images/icons_parceiros/game-icons_porcelain-vase.svg";
+import climatizacao from "../../../public/images/icons_parceiros/icon-park-outline_air-conditioning.svg";
 import ti from "../../../public/images/icons_parceiros/mdi_desktop-classic.svg";
-import grafica from "../../../public/images/icons_parceiros/el_file-edit.svg";
+import energy from "../../../public/images/icons_parceiros/energy-svgrepo-com.svg";
 import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce-management.svg";
 
 import styles from "./styles.module.css";
@@ -18,8 +18,8 @@ export function CardListEmpresas(){
         <div className={styles.card}>
             <div className={styles.subModalRadix}>
                 <ModalRadixUI
-                    title={'Agronegócio'}
-                    src={plant}
+                    title={'Mecânica e Metalurgica'}
+                    src={mechanic}
                     area={1}
                 />
                 <ModalRadixUI
@@ -28,15 +28,15 @@ export function CardListEmpresas(){
                     area={2}
                 />
                 <ModalRadixUI
-                    title={'Associações'}
-                    src={association}
+                    title={'Plásticos'}
+                    src={plastic}
                     area={3}
                 />
             </div>
             <div className={styles.subModalRadix}>
                 <ModalRadixUI
-                    title={'Atomação'}
-                    src={auto_industry}
+                    title={'Tecnologia da Informação'}
+                    src={computer}
                     area={4}
                 />
                 <ModalRadixUI
@@ -45,8 +45,8 @@ export function CardListEmpresas(){
                     area={5}
                 />
                 <ModalRadixUI
-                    title={'Cerâmica'}
-                    src={ceramica}
+                    title={'Refrigeração'}
+                    src={climatizacao}
                     area={6}
                 />
             </div>
@@ -57,12 +57,12 @@ export function CardListEmpresas(){
                     area={7}
                 />
                 <ModalRadixUI
-                    title={'Eletrônica'}
-                    src={grafica}
+                    title={'Energia'}
+                    src={energy}
                     area={8}
                 />
                 <ModalRadixUI
-                    title={'Energia'}
+                    title={'Gestão'}
                     src={gestor}
                     area={9}
                 />

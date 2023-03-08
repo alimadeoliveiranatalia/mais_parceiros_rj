@@ -6,7 +6,7 @@ export interface ContentModalProps{
     area: number
 }
 
-const empresas_agronegocio = list_parceiros.mecanica_metalurgica.map((item) => {
+const empresas_mecanica = list_parceiros.mecanica_metalurgica.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
@@ -30,7 +30,7 @@ const empresas_alimentos = list_parceiros.alimentos.map((item) => {
     )
 });
 
-const empresas_associacoes = list_parceiros.plasticos.map((item) => {
+const empresas_plasticos = list_parceiros.plasticos.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
@@ -42,7 +42,7 @@ const empresas_associacoes = list_parceiros.plasticos.map((item) => {
     )
 });
 
-const empresas_automacao = list_parceiros.tecnologia_informacao.map((item) => {
+const empresas_tec_informacao = list_parceiros.tecnologia_informacao.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
@@ -66,7 +66,7 @@ const empresas_automotiva = list_parceiros.automotiva.map((item) => {
     )
 });
 
-const empresas_ceramica = list_parceiros.refrigeracao.map((item) => {
+const empresas_refrigeracao = list_parceiros.refrigeracao.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
@@ -90,7 +90,7 @@ const empresas_const_civil = list_parceiros.construcao_civil.map((item) => {
     )
 });
 
-const empresas_eletronica = list_parceiros.eletronica.map((item) => {
+const empresas_energia = list_parceiros.energia.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
@@ -102,8 +102,7 @@ const empresas_eletronica = list_parceiros.eletronica.map((item) => {
     )
 });
 
-
-const empresas_energia = list_parceiros.energia.map((item) => {
+const empresas_gestao = list_parceiros.gestao.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
@@ -119,15 +118,15 @@ export function ContentModal({ area }: ContentModalProps){
 
     function verify_area(area: number){
         return (
-            area === 1 ? empresas_agronegocio :
+            area === 1 ? empresas_mecanica :
             area === 2 ? empresas_alimentos :
-            area === 3 ? empresas_associacoes:
-            area === 4 ? empresas_automacao :
+            area === 3 ? empresas_plasticos:
+            area === 4 ? empresas_tec_informacao :
             area === 5 ? empresas_automotiva :
-            area === 6 ? empresas_ceramica : 
+            area === 6 ? empresas_refrigeracao : 
             area === 7 ? empresas_const_civil :
-            area === 8 ? empresas_eletronica :
-            area === 9 ? empresas_energia :
+            area === 8 ? empresas_energia :
+            area === 9 ? empresas_gestao :
             'no_empresas'
         )
     }
