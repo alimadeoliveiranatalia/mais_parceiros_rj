@@ -1,156 +1,134 @@
 ﻿{    
-    "agronegocio" : [
+    "mecanica_metalurgica" : [
         { 
             "id": 1,
-            "area": "Agronegócio",    
-            "empresa":  "John Deere do Brasil",
-            "escola_responsavel": "602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes"
+            "area": "Mecância e Metalurgica",    
+            "empresa":  "Cimep (Grupo Brasilata)",
+            "escola_responsavel": "Firjan"
         },
         { 
             "id":2,
-            "area": "Agronegócio",    
-            "empresa":  "John Deere do Brasil",
-            "escola_responsavel": "602 - Escola Senai - Ribeirão Preto - Eng. Octavio Marcondes"
+            "area": "Mecância e Metalurgica",    
+            "empresa":  "Ternium Brasil LTDA",
+            "escola_responsavel": "Firjan"
         }
     ],
     "alimentos": [
         {
             "id": 3,
             "area": "Alimentos e Bebidas",
-            "empresa": "Finamac Engenharia e Industrialização de Equipamentos",
-            "escola_responsavel": "105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira"
+            "empresa": "Moinhos Cruzeiro Do Sul S.A.",
+            "escola_responsavel": "Firjan"
         },
         {
             "id": 4,
             "area": "Alimentos e Bebidas",
-            "empresa": "Finamac Engenharia e Industrialização de Equipamentos",
-            "escola_responsavel": "105 - Escola Senai - Barra Funda - Horácio Augusto da Silveira"
+            "empresa": "Coperativa Agrária",
+            "escola_responsavel": "Firjan"
         }
     ],
-    "associacoes" : [
+    "plasticos" : [
         {
             "id": 5,
-            "area": "Associações e Entidades",
-            "empresa": "Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL",
-            "escola_responsavel": "124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho"
+            "area": "Plásticos",
+            "empresa": "Companhia de Canetas Compactor",
+            "escola_responsavel": "Firjan"
         },
         {
             "id": 6,
-            "area": "Associações e Entidades",
-            "empresa": "Associação Nacional De Fabricantes De Esquadrias de Alumínio - AFEAL",
-            "escola_responsavel": "124 - Escola Senai - Suzano - Luis Eulálio de Bueno Vidigal Filho"
+            "area": "Plásticos",
+            "empresa": "Fabricadora de Poliuretano Rio Sul LTDA",
+            "escola_responsavel": "Firjan"
         }
     ],
-    "automacao" : [
+    "tecnologia_informacao" : [
         {
             "id": 7,
-            "area": "Automação Industrial",
-            "empresa": "Altus Sistemas de Automação S.A. Comau do Brasil",
-            "escola_responsavel": "568 - Escola Senai - Campo Limpo Paulista - Alfried Krupp"
+            "area": "Tecnologia da Informação",
+            "empresa": "Orange Business Services Brasil LTDA",
+            "escola_responsavel": "Firjan"
         },
         {
             "id": 8,
-            "area": "Automação",
-            "empresa": "Altus Sistemas de Automação S.A. Comau do Brasil",
-            "escola_responsavel": "568 - Escola Senai - Campo Limpo Paulista - Alfried Krupp"
+            "area": "Tecnologia da Informação",
+            "empresa": "Orange Business Services Brasil LTDA",
+            "escola_responsavel": "Firjan"
         }
     ],
-    "ceramica" : [
+    "refrigeracao" : [
         {
             "id": 9,
-            "area": "Cerâmica",
-            "empresa": "Associação das Cerâmicas Vermelhas de Itú e Região",
-            "escola_responsavel": "116 - Escola Senai - São Bernado do Campo (Mário Amato) - Mario Amato"
+            "area": "Refrigeração e Climatização",
+            "empresa": "Green",
+            "escola_responsavel": "Firjan"
         },
         {
             "id": 10,
-            "area": "Cerâmica",
-            "empresa": "Associação das Cerâmicas Vermelhas de Itú e Região",
-            "escola_responsavel": "116 - Escola Senai - São Bernado do Campo (Mário Amato) - Mario Amato"
+            "area": "Refrigeração e Climatização",
+            "empresa": "Eletrolux",
+            "escola_responsavel": "Firjan"
         }
     ],
     "construcao_civil" : [
         {
             "id": 11,
             "area": "Construção Civil",
-            "empresa": "Amanco Brasil LTDA",
-            "escola_responsavel": "111 - Escola Senai - Tatuapé - Orlando Laviero Ferraiuolo"
+            "empresa": "Gypsum Mineração Industria e Comércio LTDA",
+            "escola_responsavel": "Firjan"
         },
         {
             "id": 12,
             "area": "Construção Civil",
-            "empresa": "Amanco Brasil LTDA",
-            "escola_responsavel": "111 - Escola Senai - Tatuapé - Orlando Laviero Ferraiuolo"
-        }
-    ],
-    "eletronica" : [
-        {
-            "id": 13,
-            "area": "Eletrônica",
-            "empresa": "Wago Eletronica LTDA",
-            "escola_responsavel": "510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
+            "empresa": "Cidade das Tintas",
+            "escola_responsavel": "Firjan"
         },
         {
-            "id": 14,
-            "area": "Eletrônica",
-            "empresa": "Wago Eletronica LTDA",
-            "escola_responsavel": "510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
+            "id": 13,
+            "area": "Construção Civil",
+            "empresa": "Município de Tanguá",
+            "escola_responsavel": "Firjan"
         }
     ],
     "energia" : [
         {
+            "id": 14,
+            "area": "Energia e Eletricidade",
+            "empresa":"Macomevap",
+            "escola_responsavel":"Firjan"
+        },
+        {
             "id": 15,
             "area": "Energia e Eletricidade",
-            "empresa":"Antares Soluções Energéticas Renováveis LTDA",
-            "escola_responsavel":"562 - Escola Senai - Indaiatuba - Comendador Santoro Mirone"
-        },
-        {
-            "id": 16,
-            "area": "Energia e Eletricidade",
-            "empresa":"Antares Soluções Energéticas Renováveis LTDA",
-            "escola_responsavel":"562 - Escola Senai - Indaiatuba - Comendador Santoro Mirone"
-        }
-    ],
-    "biomedicina":[
-        {
-            "id": 17,
-            "area": "Equipamentos Biomédicos",
-            "empresa":"Biosensor Indústria e Comércio LTDA",
-            "escola_responsavel":"106 - Escola Senai - Vila Leopoldina - Mariano Ferraz"
-        },
-        {
-            "id": 18,
-            "area": "Equipamentos Biomédicos",
-            "empresa":"Biosensor Indústria e Comércio LTDA",
-            "escola_responsavel":"106 - Escola Senai - Vila Leopoldina - Mariano Ferraz"
+            "empresa":"Minipa",
+            "escola_responsavel":"Firjan"
         }
     ],
     "gestao" : [
         {
-            "id": 19,
+            "id": 16,
             "area": "Gestão",
-            "empresa":"ERFLEX software LTDA",
-            "escola_responsavel":"GIS - Gerência de Infraestrutura e Suprimentos"
+            "empresa":"Município São Pedro da Aldeia",
+            "escola_responsavel":"Firjan"
         },
         {
-            "id": 20,
+            "id": 17,
             "area": "Gestão",
             "empresa":"ERFLEX software LTDA",
-            "escola_responsavel":"GIS - Gerência de Infraestrutura e Suprimentos"
+            "escola_responsavel":"Firjan"
         }
     ],
     "automotiva": [
         {
-            "id": 21,
+            "id": 18,
             "area": "Automotiva",
-            "empresa":"APTIV Manufatura e Serv. de Distribuição LTDA (DELPHI)",
-            "escola_responsavel":"510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
+            "empresa":"Stellantis",
+            "escola_responsavel":"Firjan"
         },
         {
-            "id": 22,
+            "id": 19,
             "area": "Automotiva",
-            "empresa":"APTIV Manufatura e Serv. de Distribuição LTDA (DELPHI)",
-            "escola_responsavel":"510 - Escola Senai - Piracicaba (Vila Rezende) - Mario Henrique Simonsen"
+            "empresa":"FCA FIAT Chrysler Automóveis Brasil LTDA",
+            "escola_responsavel":"Firjan"
         }
     ]
 }
