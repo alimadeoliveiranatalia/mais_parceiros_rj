@@ -1,5 +1,4 @@
-﻿import Image from "next/image";
-import logo from "../../../public/icons_parceiros/john_deere.svg";
+﻿import { FaIndustry } from "react-icons/fa";
 import styles from "./styles.module.css";
 import list_parceiros from "../../../public/parceiros.json";
 
@@ -7,11 +6,11 @@ export interface ContentModalProps{
     area: number
 }
 
-const empresas_agronegocio = list_parceiros.agronegocio.map((item) => {
+const empresas_agronegocio = list_parceiros.mecanica_metalurgica.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -23,7 +22,7 @@ const empresas_alimentos = list_parceiros.alimentos.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -31,11 +30,11 @@ const empresas_alimentos = list_parceiros.alimentos.map((item) => {
     )
 });
 
-const empresas_associacoes = list_parceiros.associacoes.map((item) => {
+const empresas_associacoes = list_parceiros.plasticos.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -43,11 +42,11 @@ const empresas_associacoes = list_parceiros.associacoes.map((item) => {
     )
 });
 
-const empresas_automacao = list_parceiros.automacao.map((item) => {
+const empresas_automacao = list_parceiros.tecnologia_informacao.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -59,7 +58,7 @@ const empresas_automotiva = list_parceiros.automotiva.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -67,11 +66,11 @@ const empresas_automotiva = list_parceiros.automotiva.map((item) => {
     )
 });
 
-const empresas_ceramica = list_parceiros.ceramica.map((item) => {
+const empresas_ceramica = list_parceiros.refrigeracao.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -83,7 +82,7 @@ const empresas_const_civil = list_parceiros.construcao_civil.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -95,7 +94,7 @@ const empresas_eletronica = list_parceiros.eletronica.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -108,7 +107,7 @@ const empresas_energia = list_parceiros.energia.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <Image src={logo} alt='logo empresa' width={45} height={45}/>
+                <FaIndustry />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
