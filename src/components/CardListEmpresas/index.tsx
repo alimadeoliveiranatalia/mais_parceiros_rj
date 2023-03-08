@@ -4,7 +4,7 @@ import plastic from "../../../public/images/icons_parceiros/fluent_drink-bottle-
 import computer from "../../../public/images/icons_parceiros/mdi_desktop-classic.svg";
 import automotiva from "../../../public/images/icons_parceiros/bxs_car-mechanic.svg";
 import climatizacao from "../../../public/images/icons_parceiros/icon-park-outline_air-conditioning.svg";
-import ti from "../../../public/images/icons_parceiros/mdi_desktop-classic.svg";
+import construction from "../../../public/images/icons_parceiros/construction-svgrepo-com.svg";
 import energy from "../../../public/images/icons_parceiros/energy-svgrepo-com.svg";
 import gestor from "../../../public/images/icons_parceiros/fluent-mdl2_workforce-management.svg";
 
@@ -52,8 +52,8 @@ export function CardListEmpresas(){
             </div>
             <div className={styles.subModalRadix}>
                 <ModalRadixUI
-                    title={'Construção'}
-                    src={ti}
+                    title={'Construção Civil'}
+                    src={construction}
                     area={7}
                 />
                 <ModalRadixUI

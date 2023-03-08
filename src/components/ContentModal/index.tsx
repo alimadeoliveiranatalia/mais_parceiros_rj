@@ -10,7 +10,7 @@ const empresas_mecanica = list_parceiros.mecanica_metalurgica.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -22,7 +22,7 @@ const empresas_alimentos = list_parceiros.alimentos.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -34,7 +34,7 @@ const empresas_plasticos = list_parceiros.plasticos.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -46,7 +46,7 @@ const empresas_tec_informacao = list_parceiros.tecnologia_informacao.map((item) 
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -58,7 +58,7 @@ const empresas_automotiva = list_parceiros.automotiva.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -70,7 +70,7 @@ const empresas_refrigeracao = list_parceiros.refrigeracao.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -82,7 +82,7 @@ const empresas_const_civil = list_parceiros.construcao_civil.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -94,7 +94,7 @@ const empresas_energia = list_parceiros.energia.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>
@@ -106,7 +106,7 @@ const empresas_gestao = list_parceiros.gestao.map((item) => {
     return (
         <tr key={item.id}>
             <td style={{'display':'flex', 'justifyContent': 'flex-start'}}>
-                <FaIndustry />
+                <FaIndustry className={styles.icon} />
                 <div style={{'margin': '1rem'}}>{item.empresa}</div>
             </td>
             <td>{item.escola_responsavel}</td>

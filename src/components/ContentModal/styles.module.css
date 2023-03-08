@@ -6,7 +6,7 @@
     width: 1200px;
     height: 78px;
     padding: 2rem;
-    background: #FFFFFF;
+    background: var(--white);
 }
 .table th {
     text-transform: uppercase;
@@ -15,4 +15,9 @@
 }
 .table td {
     font-size: 1.5;
+}
+.icon {
+    width: 4rem;
+    height: 4rem;
+    color: var(--dark-blue);
 }
