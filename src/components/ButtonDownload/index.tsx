@@ -1,8 +1,8 @@
 ﻿import styles from "./styles.module.css";
 import { AiOutlineDownload } from "react-icons/ai";
 
-export function ButtonDownload(){
+export function ButtonDownload(endereco_url: string){
     return (
-        <a href="#" download={'file.pdf'} aria-label={'document'}><AiOutlineDownload className={styles.icon}/></a>
+        <a href={endereco_url} download={'file.pdf'} aria-label={'document'}><AiOutlineDownload className={styles.icon}/></a>
     )
 }
